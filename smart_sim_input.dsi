@@ -1,0 +1,6 @@
+Devsim Input File
+/tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+tt.cor
+ttcell.cor,trtc.cor
+Paramname,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,C
+1,nhv,nmos,id,,,7,0.5,1,30,0.1,5,,0,eldo,1,1,5,0.1,1.00E-08,

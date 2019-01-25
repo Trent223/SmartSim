@@ -1,0 +1,3 @@
+.model nhv nmos
+.model phv pmos
+.model mrp1 r rsh=600

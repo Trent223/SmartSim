@@ -1,0 +1,8 @@
+Devsim Example file
+./s8_simple
+simple.cor
+none
+Paramname,Model,device_type,analysis_type,W,L,Vd,Vg,Vb
+IDSP,phv,pmos,id,10.0,0.5,5,5,0
+IDSN,nhv,nmos,id,10.0,0.5,5,5,0
+RES,mrp1,res,rds,0.5,10,0.1,,

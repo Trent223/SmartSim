@@ -1,0 +1,10 @@
+Model Directory: ./s8_simple/
+Temperature = 25.0 celsius.
+
+======================================================================================
+ PARAMNAME,     MODEL,DEVICE_TYPE,ANALYSIS_TYPE,         W,         L,        VD,        VG,        VB,TEMPERATURE,CALCULATOR,MEASURE_NAME,     SCALE,        SIM: simple,
+      idsp,       phv,      pmos,        id,      10.0,       0.5,         5,         5,         0,        25,          ,      idsp,       1.0,      fail,
+      idsn,       nhv,      nmos,        id,      10.0,       0.5,         5,         5,         0,        25,          ,      idsn,       1.0,      fail,
+       res,      mrp1,       res,       rds,       0.5,        10,       0.1,          ,          ,        25,          ,       res,       1.0,      fail,
+
+Devsim version 1.51 has completed using options: devsim -o output.dso input.dsi
