@@ -1,5 +1,5 @@
 import subprocess
-import config_file
+import config_file # FIXME: causes crash if no config file found at runtime (JBS)
 import scipy_curve_fit
 import sys
 import os

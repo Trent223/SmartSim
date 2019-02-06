@@ -13,6 +13,8 @@ from tkinter import messagebox
 import sys
 from sympy import solve, Symbol
 from config_funcs import get_optimizer_values, get_devsim_values, update_config_file
+# FIXME: This is causing function to crash if no config file is found right off the bat
+# see comment in config_funcs.py (JBS)
 
 # Create a root window that will be hidden. Will act as a driver to all other windows that may need to be spawned.
 root = tk.Tk()
