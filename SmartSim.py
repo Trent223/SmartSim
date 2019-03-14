@@ -367,13 +367,13 @@ class MainPage:
 
         # BUTTON: Update Button
         self.updateBtn = tk.Button(self.currentWindow, text="Update Slider", command=lambda: UpdateSlider(
-            self.minText, self.maxText, self.resText), bg="deep sky blue", height=1, width=11, font=("Courier", 10))
+            self.minText, self.maxText, self.resText), bg="deep sky blue", height=1, width=13, font=("Courier", 10))
         # set the location within the window and font size
         self.updateBtn.place(relx=.18, rely=.81)
 
         # BUTTON: Goal Button
-        self.goalBtn = tk.Button(self.currentWindow, text="Goal Calc", command=lambda: self.Solve(
-            self.goalText, self.XText, index), bg="deep sky blue", height=1, width=7, font=("Courier", 10))
+        self.goalBtn = tk.Button(self.currentWindow, text="Optimize", command=lambda: self.Solve(
+            self.goalText, self.XText, index), bg="deep sky blue", height=1, width=9, font=("Courier", 10))
         # set the location within the window and font size
         self.goalBtn.place(relx=.3, rely=.81)
 
