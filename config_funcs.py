@@ -1,9 +1,22 @@
 import subprocess
-import config_file # FIXME: causes crash if no config file found at runtime (JBS)
-import scipy_curve_fit
+
 import sys
 import os
 
+try:
+    # Check to see if application was called with an argument. Argument must represent 
+    # a config file
+    command = sys.argv[1]  
+except:
+    #if argument not given set default config file
+    command = input("Enter name of config file: ") #This change allows the user to enter the name of the config file instead of the program assuming the name JBS
+try:
+    #Attempt to import the given config file
+    config_file = __import__(command)
+except:
+    #If given config file could not be loaded report an error and close application
+    print("Could not import "+command)
+    sys.exit()
 
 def get_optimizer_values(metric):
 

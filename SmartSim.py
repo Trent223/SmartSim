@@ -12,9 +12,9 @@ import tkinter.ttk as ttk
 from tkinter import messagebox
 import sys
 from sympy import solve, Symbol
-from config_funcs import get_optimizer_values, get_devsim_values, update_config_file
-# FIXME: This is causing function to crash if no config file is found right off the bat
-# see comment in config_funcs.py (JBS)
+from config_funcs import get_optimizer_values, get_devsim_values, update_config_file, config_file #this is causing function to crash if no config file is found right off the bat. SEE COMMENT IN config_funcs.py JBS
+
+
 
 # Create a root window that will be hidden. Will act as a driver to all other windows that may need to be spawned.
 root = tk.Tk()
@@ -22,20 +22,6 @@ root.withdraw()
 # This is the initial resolution of the slider and all other manual entry values
 slider_resolution = 0.00001
 
-try:
-    # Check to see if application was called with an argument. Argumrnt must represent
-    # a config file
-    command = sys.argv[1]
-except:
-    # if argument not given set default config file
-    command = "config_file"
-try:
-    # Attempt to import the given config file
-    config_file = __import__(command)
-except:
-    # If given config file could not be loaded report an error and close application
-    print("Could not import "+command)
-    sys.exit()
 
 # This function is called to load model data that will be used to create a new plot
 
@@ -381,13 +367,13 @@ class MainPage:
 
         # BUTTON: Update Button
         self.updateBtn = tk.Button(self.currentWindow, text="Update Slider", command=lambda: UpdateSlider(
-            self.minText, self.maxText, self.resText), bg="deep sky blue", height=1, width=11, font=("Courier", 10))
+            self.minText, self.maxText, self.resText), bg="deep sky blue", height=1, width=13, font=("Courier", 10))
         # set the location within the window and font size
         self.updateBtn.place(relx=.18, rely=.81)
 
         # BUTTON: Goal Button
-        self.goalBtn = tk.Button(self.currentWindow, text="Goal Calc", command=lambda: self.Solve(
-            self.goalText, self.XText, index), bg="deep sky blue", height=1, width=7, font=("Courier", 10))
+        self.goalBtn = tk.Button(self.currentWindow, text="Optimize", command=lambda: self.Solve(
+            self.goalText, self.XText, index), bg="deep sky blue", height=1, width=9, font=("Courier", 10))
         # set the location within the window and font size
         self.goalBtn.place(relx=.3, rely=.81)
 
