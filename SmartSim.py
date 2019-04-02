@@ -144,6 +144,12 @@ class MainPage:
         '''
         testButton = tk.Button(self.currentWindow, text="TestWindowGeneration", command=lambda : self.SpecifyID("TEST", ["Test1", "Test2", "Test3"]))
         testButton.place(relx=.03, rely=.515)
+        '''
+        ******************************************************************
+        END OF UNIT TEST CODE FOR SpecifyID
+        ******************************************************************
+        '''
+
 
         # LABEL: Select new metric
         metricLbl = tk.Label(self.currentWindow, text="Select New Metric")
