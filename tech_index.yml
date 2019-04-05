@@ -1,0 +1,2430 @@
+---
+id: flow
+stabflow:
+  id: platform
+  mainline-bd500fdk:
+    id: technology
+    bd500hc1c-1p2m:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-bd500fdk/pcios/mainline-bd500fdk/bd500fdk/bd500hc1c-1p2m/models.0.1/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-bd500fdk/pcios/mainline-bd500fdk/bd500fdk/bd500hc1c-1p2m/models.3.1/spice"
+  mainline-fr130d6fdk:
+    id: technology
+    fr130d6p-3r:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-fr130d6fdk/pcios/mainline-fr130d6fdk/fr130d6fdk/fr130d6p-3r/models.0.1/spice"
+    fr130d6p-3r-hpe:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-fr130d6fdk/pcios/mainline-fr130d6fdk/fr130d6fdk/fr130d6p-3r-hpe/models.2.1/spice"
+  mainline-fr130fdk:
+    id: technology
+  mainline-fujitsu:
+    id: technology
+    cu250f:
+      id: model revision
+  mainline-ll65:
+    id: technology
+    ll65fh-12:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.0.1/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.0.1/spectre"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.2.1/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.2.1/spectre"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65fh-12/models.3.6/spice"
+    ll65h-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65h-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65h-25odr/models.3.5/spice"
+    ll65p-18r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65p-18r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65p-18r/models.3.5/spice"
+    ll65p-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65p-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65p-25odr/models.3.5/spice"
+    ll65ump-25odr:
+      id: model revision
+      models.3.7:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65ump-25odr/models.3.7/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65ump-25odr/models.3.7/spice"
+    ll65up-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65up-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65up-25odr/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65up-25odr/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65up-25odr/models.3.6/spice"
+      models.3.7:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65up-25odr/models.3.7/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65up-25odr/models.3.7/spice"
+    ll65uup-25odr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65uup-25odr/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/ll65uup-25odr/models.2.1/spice"
+    lp55up-25odr:
+      id: model revision
+    s65h-25odr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/s65h-25odr/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/s65h-25odr/models.2.1/spice"
+      models.2.2:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/s65h-25odr/models.2.2/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/s65h-25odr/models.2.2/spice"
+      models.2.3:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/s65h-25odr/models.2.3/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65/pcios/mainline-ll65/ll65/s65h-25odr/models.2.3/spice"
+  mainline-ll65fdk:
+    id: technology
+    ll65-rhu-5ml-25odr:
+      id: model revision
+      models.2.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-ll65fdk/pcios/mainline-ll65fdk/ll65fdk/ll65-rhu-5ml-25odr/models.2.2/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-ll65fdk/pcios/mainline-ll65fdk/ll65fdk/ll65-rhu-5ml-25odr/models.3.1/spice"
+  mainline-ll65oa:
+    id: technology
+    ll65h-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/ll65h-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/ll65h-25odr/models.3.5/spice"
+    ll65x:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/ll65x/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/ll65x/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/ll65x/models.3.5/spice"
+    s65h-25odr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/s65h-25odr/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/s65h-25odr/models.2.1/spice"
+      models.2.2:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/s65h-25odr/models.2.2/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/s65h-25odr/models.2.2/spice"
+      models.2.3:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/s65h-25odr/models.2.3/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-ll65oa/pcios/mainline-ll65oa/ll65oa/s65h-25odr/models.2.3/spice"
+  mainline-mb45:
+    id: technology
+    mb45-4ml:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-mb45/pcios/mainline-mb45/mb45/mb45-4ml/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-mb45/pcios/mainline-mb45/mb45/mb45-4ml/models.2.1/spice"
+    mb45-4ml-pbo:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-mb45/pcios/mainline-mb45/mb45/mb45-4ml-pbo/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-mb45/pcios/mainline-mb45/mb45/mb45-4ml-pbo/models.2.1/spice"
+  mainline-s28fdk:
+    id: technology
+    s28hpcp-e-5ml0t0d0f1a0c-160a:
+      id: model revision
+    s28hpcp-s-5ml0t0d0f1a0c-18:
+      id: model revision
+    s28hpcp-s-5ml0t0d0f1a0c-25odr:
+      id: model revision
+    s28hpcp-s-9m0t0a1c1u-utrdl-18:
+      id: model revision
+  mainline-s40fdk:
+    id: technology
+    s40e-hd-rh-6ml-160a:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.0.1/spice"
+      models.0.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.0.2/spice"
+      models.2.5:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.2.5/spice"
+      models.2.6:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.2.6/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.3.1/spice"
+      models.3.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.3.2/spice"
+      models.3.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.3.3/spice"
+      models.3.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40e-hd-rh-6ml-160a/models.3.4/spice"
+    s40lp-s-rh-6ml-25odr:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.2.1/spice"
+      models.2.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.2.3/spice"
+      models.2.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.2.4/spice"
+      models.2.5:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.2.5/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.3.1/spice"
+      models.3.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.3.2/spice"
+      models.3.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml-25odr/models.3.3/spice"
+    s40lp-s-rh-6ml0t0h0a1u-25odr:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml0t0h0a1u-25odr/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40lp-s-rh-6ml0t0h0a1u-25odr/models.2.1/spice"
+    s40s-lrh-6ml1-utrdl-55a-mr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40s-lrh-6ml1-utrdl-55a-mr/models.2.1/spice"
+    s40sb-lrh-6ml1-utrdl-55a:
+      id: model revision
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40sb-lrh-6ml1-utrdl-55a/models.3.1/spice"
+    s40ulp-s-rh-6ml-25odr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.1/spice"
+      models.2.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.2/spice"
+      models.2.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.3/spice"
+      models.2.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.4/spice"
+      models.2.5:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.5/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.1/spice"
+      models.3.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.2/spice"
+      models.3.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.3/spice"
+      models.3.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s40fdk/pcios/mainline-s40fdk/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.4/spice"
+  mainline-s40tfdk:
+    id: technology
+    s40tulp-s-6lm-25odr:
+      id: model revision
+  mainline-s55fdk:
+    id: technology
+    s55lp-rh-6ml-25odr:
+      id: model revision
+      models.2.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s55fdk/pcios/mainline-s55fdk/s55fdk/s55lp-rh-6ml-25odr/models.2.2/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-s55fdk/pcios/mainline-s55fdk/s55fdk/s55lp-rh-6ml-25odr/models.3.1/spice"
+  mainline-s8:
+    id: technology
+    f8ph-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/f8ph-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/f8ph-10r/models.3.5/spice"
+    fr8pf-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/fr8pf-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/fr8pf-10r/models.3.5/spice"
+    s8di-5r:
+      id: model revision
+      models.2.4:
+        id: simulator language
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8di-5r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8di-5r/models.3.5/spice"
+    s8di-5r-csmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8di-5r-csmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8di-5r-csmc/models.3.5/spice"
+    s8di-5r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8di-5r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8di-5r-gsmc/models.3.5/spice"
+    s8p-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r/models.3.5/spice"
+    s8p-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r-fab25/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r-fab25/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r-fab25/models.3.5/spice"
+    s8p-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r-gsmc/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r-gsmc/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-10r-gsmc/models.3.5/spice"
+    s8p-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p-5r/models.3.5/spice"
+    s8p12-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r/models.3.5/spice"
+    s8p12-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-fab25/models.3.5/spice"
+    s8p12-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-fab25cu/models.3.5/spice"
+    s8p12-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-gsmc/models.3.5/spice"
+    s8p12-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-hhnec/models.3.5/spice"
+    s8p12-10r-umc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-umc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8p12-10r-umc/models.3.5/spice"
+    s8pf-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r/models.3.5/spice"
+    s8pf-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-fab25/models.3.5/spice"
+    s8pf-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-fab25cu/models.3.5/spice"
+    s8pf-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-gsmc/models.3.5/spice"
+    s8pf-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-hhnec/models.3.5/spice"
+    s8pf-10r-umc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-umc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pf-10r-umc/models.3.5/spice"
+    s8pfhd-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r/models.3.5/spice"
+    s8pfhd-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-fab25/models.3.5/spice"
+    s8pfhd-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-fab25cu/models.3.5/spice"
+    s8pfhd-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-gsmc/models.3.5/spice"
+    s8pfhd-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfhd-10r-hhnec/models.3.5/spice"
+    s8pfn-20r:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.0.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.0.1/spice"
+      models.0.2:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.0.2/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.0.2/spice"
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r/models.3.6/spice"
+    s8pfn-20r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-fab25/models.3.6/spice"
+    s8pfn-20r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-fab25cu/models.3.6/spice"
+    s8pfn-20r-gsmc:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-gsmc/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-gsmc/models.3.6/spice"
+    s8pfn-20r-hhnec:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-hhnec/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfn-20r-hhnec/models.3.6/spice"
+    s8pfnbl-20r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnbl-20r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnbl-20r-fab25/models.3.6/spice"
+    s8pfnbl-20r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnbl-20r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnbl-20r-fab25cu/models.3.6/spice"
+    s8pfnl-20r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnl-20r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnl-20r-fab25/models.3.6/spice"
+    s8pfnl-20r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnl-20r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pfnl-20r-fab25cu/models.3.6/spice"
+    s8phirs-10r:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phirs-10r/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phirs-10r/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phirs-10r/models.3.6/spice"
+    s8phirs-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phirs-10r-fab25/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phirs-10r-fab25/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phirs-10r-fab25/models.3.6/spice"
+    s8phr-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r/models.3.6/spice"
+    s8phr-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-fab25/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-fab25/models.3.6/spice"
+    s8phr-10r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-fab25cu/models.3.6/spice"
+    s8phr-10r-gsmc:
+      id: model revision
+    s8phr-10r-hhnec:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-hhnec/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8phr-10r-hhnec/models.3.6/spice"
+    s8pir-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.2.1/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.2.1/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r/models.3.6/spice"
+    s8pir-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r-fab25/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r-fab25/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pir-10r-fab25/models.3.6/spice"
+    s8pr2-10r:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pr2-10r/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pr2-10r/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8pr2-10r/models.3.6/spice"
+    s8q-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8q-5r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8q-5r/models.3.5/spice"
+    s8spf-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r/models.3.5/spice"
+    s8spf-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r-fab25/models.3.5/spice"
+    s8spf-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r-fab25cu/models.3.5/spice"
+    s8spf-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8spf-10r-hhnec/models.3.5/spice"
+    s8sphr-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r/models.3.6/spice"
+    s8sphr-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r-fab25/models.3.6/spice"
+    s8sphr-10r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r-fab25cu/models.3.6/spice"
+    s8sphr-10r-gsmc:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r-gsmc/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8sphr-10r-gsmc/models.3.6/spice"
+    s8ss-5r:
+      id: model revision
+    s8tm-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tm-5r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tm-5r/models.3.5/spice"
+    s8tma-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tma-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tma-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tma-5r/models.3.5/spice"
+    s8tmc-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tmc-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tmc-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tmc-5r/models.3.5/spice"
+    s8tmc-5r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tmc-5r-gsmc/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tmc-5r-gsmc/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tmc-5r-gsmc/models.3.5/spice"
+    s8tnv-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tnv-5r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tnv-5r/models.3.5/spice"
+    s8tnv-5r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tnv-5r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8/pcios/mainline-s8/s8/s8tnv-5r-fab25/models.3.5/spice"
+    sp8p-5r:
+      id: model revision
+  mainline-s8cu:
+    id: technology
+    s8cuphr-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8cu/pcios/mainline-s8cu/s8cu/s8cuphr-10r/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/mainline-s8cu/pcios/mainline-s8cu/s8cu/s8cuphr-10r/models.2.1/spice"
+  mainline-s8oa:
+    id: technology
+    s8p-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8p-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8p-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8p-10r/models.3.5/spice"
+    s8p-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8p-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8p-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8p-5r/models.3.5/spice"
+    s8x:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8x/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8x/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/mainline-s8oa/pcios/mainline-s8oa/s8oa/s8x/models.3.5/spice"
+  mainline-towerjazz:
+    id: technology
+    ts18pm-4m1t3:
+      id: model revision
+      models.0.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-towerjazz/pcios/mainline-towerjazz/towerjazz/ts18pm-4m1t3/models.0.2/spice"
+      models.0.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/mainline-towerjazz/pcios/mainline-towerjazz/towerjazz/ts18pm-4m1t3/models.0.3/spice"
+  001-42632:
+    id: technology
+    s8p-5r:
+      id: model revision
+      models.3.4:
+        id: simulator language
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p-5r/models.3.5/spice"
+    s8p12-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r/models.3.5/spice"
+    s8p12-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r-fab25/models.3.5/spice"
+    s8p12-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r-gsmc/models.3.5/spice"
+    s8p12-10r-umc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r-umc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-42632/pcios/001-42632/s8/s8p12-10r-umc/models.3.5/spice"
+  001-54679:
+    id: technology
+    ll65h-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-54679/pcios/001-54679/ll65/ll65h-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-54679/pcios/001-54679/ll65/ll65h-25odr/models.3.5/spice"
+  001-55139:
+    id: technology
+    s8tnv-5r:
+      id: model revision
+      models.3.4:
+        id: simulator language
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-55139/pcios/001-55139/s8/s8tnv-5r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-55139/pcios/001-55139/s8/s8tnv-5r/models.3.5/spice"
+  001-55911:
+    id: technology
+    s8tma-5r:
+      id: model revision
+      models.3.4:
+        id: simulator language
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-55911/pcios/001-55911/s8/s8tma-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-55911/pcios/001-55911/s8/s8tma-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-55911/pcios/001-55911/s8/s8tma-5r/models.3.5/spice"
+  001-59001:
+    id: technology
+    s8p-10r:
+      id: model revision
+      models.3.4:
+        id: simulator language
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r/models.3.5/spice"
+    s8p-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r-fab25/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r-fab25/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r-fab25/models.3.5/spice"
+    s8p-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r-gsmc/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r-gsmc/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-10r-gsmc/models.3.5/spice"
+    s8p-5r:
+      id: model revision
+      models.3.4:
+        id: simulator language
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p-5r/models.3.5/spice"
+    s8p12-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r/models.3.5/spice"
+    s8p12-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-fab25/models.3.5/spice"
+    s8p12-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-fab25cu/models.3.5/spice"
+    s8p12-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-gsmc/models.3.5/spice"
+    s8p12-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-hhnec/models.3.5/spice"
+    s8p12-10r-umc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-umc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8p12-10r-umc/models.3.5/spice"
+    s8pf-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r/models.2.1/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r/models.2.1/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r/models.3.5/spice"
+    s8pf-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-fab25/models.3.5/spice"
+    s8pf-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-fab25cu/models.3.5/spice"
+    s8pf-10r-gsmc:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-gsmc/models.2.1/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-gsmc/models.2.1/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-gsmc/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-gsmc/models.3.5/spice"
+    s8pf-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-hhnec/models.3.5/spice"
+    s8pf-10r-umc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-umc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pf-10r-umc/models.3.5/spice"
+    s8pfhd-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r/models.3.5/spice"
+    s8pfhd-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-fab25/models.3.5/spice"
+    s8pfhd-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-fab25cu/models.3.5/spice"
+    s8pfhd-10r-gsmc:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-gsmc/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-gsmc/models.3.5/spice"
+    s8pfhd-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfhd-10r-hhnec/models.3.5/spice"
+    s8pfn-20r:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.0.1/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.0.1/spice"
+      models.0.2:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.0.2/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.0.2/spice"
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r/models.3.6/spice"
+    s8pfn-20r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-fab25/models.3.6/spice"
+    s8pfn-20r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-fab25cu/models.3.6/spice"
+    s8pfn-20r-gsmc:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-gsmc/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-gsmc/models.3.6/spice"
+    s8pfn-20r-hhnec:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-hhnec/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfn-20r-hhnec/models.3.6/spice"
+    s8pfnbl-20r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnbl-20r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnbl-20r-fab25/models.3.6/spice"
+    s8pfnbl-20r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnbl-20r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnbl-20r-fab25cu/models.3.6/spice"
+    s8pfnl-20r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnl-20r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnl-20r-fab25/models.3.6/spice"
+    s8pfnl-20r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnl-20r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pfnl-20r-fab25cu/models.3.6/spice"
+    s8phirs-10r:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phirs-10r/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phirs-10r/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phirs-10r/models.3.6/spice"
+    s8phirs-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phirs-10r-fab25/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phirs-10r-fab25/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phirs-10r-fab25/models.3.6/spice"
+    s8phr-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r/models.3.6/spice"
+    s8phr-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r-fab25/models.3.6/spice"
+    s8phr-10r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r-fab25cu/models.3.6/spice"
+    s8phr-10r-hhnec:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r-hhnec/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8phr-10r-hhnec/models.3.6/spice"
+    s8pir-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.2.1/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.2.1/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r/models.3.6/spice"
+    s8pir-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r-fab25/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r-fab25/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pir-10r-fab25/models.3.6/spice"
+    s8pr2-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pr2-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pr2-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pr2-10r/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pr2-10r/models.3.6/nanosim"
+        spectre:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pr2-10r/models.3.6/spectre"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8pr2-10r/models.3.6/spice"
+    s8spf-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r/models.2.1/spice"
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r/models.3.5/spice"
+    s8spf-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r-fab25/models.3.5/spice"
+    s8spf-10r-fab25cu:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r-fab25cu/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r-fab25cu/models.3.5/spice"
+    s8spf-10r-hhnec:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r-hhnec/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8spf-10r-hhnec/models.3.5/spice"
+    s8sphr-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r/models.3.6/spice"
+    s8sphr-10r-fab25:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r-fab25/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r-fab25/models.3.6/spice"
+    s8sphr-10r-fab25cu:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r-fab25cu/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r-fab25cu/models.3.6/spice"
+    s8sphr-10r-gsmc:
+      id: model revision
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r-gsmc/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001/pcios/001-59001/s8/s8sphr-10r-gsmc/models.3.6/spice"
+  001-59001-cu:
+    id: technology
+    s8cuphr-10r:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-59001-cu/pcios/001-59001-cu/s8cu/s8cuphr-10r/models.2.1/nanosim"
+        spice:
+        - "/tools/stabflow/001-59001-cu/pcios/001-59001-cu/s8cu/s8cuphr-10r/models.2.1/spice"
+  001-61091:
+    id: technology
+    ll65p-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-61091/pcios/001-61091/ll65/ll65p-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-61091/pcios/001-61091/ll65/ll65p-25odr/models.3.5/spice"
+  001-73558:
+    id: technology
+    ll65ump-25odr:
+      id: model revision
+      models.3.7:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65ump-25odr/models.3.7/nanosim"
+        spice:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65ump-25odr/models.3.7/spice"
+    ll65up-25odr:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65up-25odr/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65up-25odr/models.3.5/spice"
+      models.3.6:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65up-25odr/models.3.6/nanosim"
+        spice:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65up-25odr/models.3.6/spice"
+      models.3.7:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65up-25odr/models.3.7/nanosim"
+        spice:
+        - "/tools/stabflow/001-73558/pcios/001-73558/ll65/ll65up-25odr/models.3.7/spice"
+  001-93795:
+    id: technology
+    s55lp-rh-6ml-25odr:
+      id: model revision
+      models.2.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-93795/pcios/001-93795/s55fdk/s55lp-rh-6ml-25odr/models.2.2/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-93795/pcios/001-93795/s55fdk/s55lp-rh-6ml-25odr/models.3.1/spice"
+  001-93795-s40:
+    id: technology
+    s40lp-s-rh-6ml0t0h0a1u-25odr:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-93795-s40/pcios/001-93795-s40/s40fdk/s40lp-s-rh-6ml0t0h0a1u-25odr/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-93795-s40/pcios/001-93795-s40/s40fdk/s40lp-s-rh-6ml0t0h0a1u-25odr/models.2.1/spice"
+  001-97729:
+    id: technology
+    s40e-hd-rh-6ml-160a:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.0.1/spice"
+      models.0.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.0.2/spice"
+      models.2.5:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.2.5/spice"
+      models.2.6:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.2.6/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.3.1/spice"
+      models.3.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.3.2/spice"
+      models.3.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.3.3/spice"
+      models.3.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40e-hd-rh-6ml-160a/models.3.4/spice"
+    s40lp-s-rh-6ml-25odr:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.2.1/spice"
+      models.2.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.2.3/spice"
+      models.2.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.2.4/spice"
+      models.2.5:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.2.5/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.3.1/spice"
+      models.3.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.3.2/spice"
+      models.3.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40lp-s-rh-6ml-25odr/models.3.3/spice"
+    s40sb-lrh-6ml1-utrdl-55a:
+      id: model revision
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40sb-lrh-6ml1-utrdl-55a/models.3.1/spice"
+    s40ulp-s-rh-6ml-25odr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.1/spice"
+      models.2.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.2/spice"
+      models.2.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.3/spice"
+      models.2.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.4/spice"
+      models.2.5:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.2.5/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.1/spice"
+      models.3.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.2/spice"
+      models.3.3:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.3/spice"
+      models.3.4:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/001-97729/pcios/001-97729/s40fdk/s40ulp-s-rh-6ml-25odr/models.3.4/spice"
+  002-02050:
+    id: technology
+    ll65-rhu-5ml-25odr:
+      id: model revision
+      models.2.2:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-02050/pcios/002-02050/ll65fdk/ll65-rhu-5ml-25odr/models.2.2/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-02050/pcios/002-02050/ll65fdk/ll65-rhu-5ml-25odr/models.3.1/spice"
+  002-05805:
+    id: technology
+    mb45-4ml:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-05805/pcios/002-05805/mb45/mb45-4ml/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-05805/pcios/002-05805/mb45/mb45-4ml/models.2.1/spice"
+    mb45-4ml-pbo:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-05805/pcios/002-05805/mb45/mb45-4ml-pbo/models.0.1/spice"
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-05805/pcios/002-05805/mb45/mb45-4ml-pbo/models.2.1/spice"
+  002-15126:
+    id: technology
+    fr130d6p-3r:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-15126/pcios/002-15126/fr130d6fdk/fr130d6p-3r/models.0.1/spice"
+    fr130d6p-3r-hpe:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-15126/pcios/002-15126/fr130d6fdk/fr130d6p-3r-hpe/models.2.1/spice"
+  002-15726:
+    id: technology
+    s8p-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8p-10r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8p-10r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8p-10r/models.3.5/spice"
+    s8p-5r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8p-5r/models.3.5/nanosim"
+        spectre:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8p-5r/models.3.5/spectre"
+        spice:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8p-5r/models.3.5/spice"
+    s8pf-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8pf-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8pf-10r/models.3.5/spice"
+    s8pfhd-10r:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8pfhd-10r/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8pfhd-10r/models.3.5/spice"
+    s8pfhd-10r-fab25:
+      id: model revision
+      models.3.5:
+        id: simulator language
+        nanosim:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8pfhd-10r-fab25/models.3.5/nanosim"
+        spice:
+        - "/tools/stabflow/002-15726/pcios/002-15726/s8/s8pfhd-10r-fab25/models.3.5/spice"
+  002-24996:
+    id: technology
+    bd500hc1c-1p2m:
+      id: model revision
+      models.0.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-24996/pcios/002-24996/bd500fdk/bd500hc1c-1p2m/models.0.1/spice"
+      models.3.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-24996/pcios/002-24996/bd500fdk/bd500hc1c-1p2m/models.3.1/spice"
+  002-25667:
+    id: technology
+    s40s-lrh-6ml1-utrdl-55a-mr:
+      id: model revision
+      models.2.1:
+        id: simulator language
+        spice:
+        - "/tools/stabflow/002-25667/pcios/002-25667/s40fdk/s40s-lrh-6ml1-utrdl-55a-mr/models.2.1/spice"
+broadcom:
+  id: technology
+  bcm22:
+    id: simulator language
+  csm09lp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/csm09lp/dmodels/hspice"
+  csm13:
+    id: simulator language
+    hspice:
+      id: model revision
+      1h: "/projects/bcm/beta/tech/csm13/dmodels/hspice/1h"
+    spectre:
+      id: model revision
+      1h: "/projects/bcm/beta/tech/csm13/dmodels/spectre/1h"
+  csm13lp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/csm13lp/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/csm13lp/dmodels/spectre"
+  csm18:
+    id: simulator language
+    hspice:
+      id: model revision
+      1c: "/projects/bcm/beta/tech/csm18/dmodels/hspice/1c"
+    spectre:
+      id: model revision
+      1c: "/projects/bcm/beta/tech/csm18/dmodels/spectre/1c"
+  csm18_6v16vHV:
+    id: simulator language
+    hspice:
+      id: model revision
+      1D: "/projects/bcm/beta/tech/csm18_6v16vHV/dmodels/hspice/1D"
+    spectre:
+      id: model revision
+      1C: "/projects/bcm/beta/tech/csm18_6v16vHV/dmodels/spectre/1C"
+  csm28_5U1x_2T8x_LB:
+    id: simulator language
+    hspice:
+      id: model revision
+      1E.0.0.0: "/projects/bcm/beta/tech/csm28_5U1x_2T8x_LB/dmodels/hspice/1E.0.0.0"
+    spectre:
+      id: model revision
+      eval0: "/projects/bcm/beta/tech/csm28_5U1x_2T8x_LB/dmodels/spectre/eval0"
+  csm28lp_5U1x_2T8x_LB:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_BCM.0: "/projects/bcm/beta/tech/csm28lp_5U1x_2T8x_LB/dmodels/hspice/0.5_BCM.0"
+    spectre:
+      id: model revision
+      v0.0.0.0cp: "/projects/bcm/beta/tech/csm28lp_5U1x_2T8x_LB/dmodels/spectre/v0.0.0.0cp"
+  csm32lp:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.0.0.0: "/projects/bcm/beta/tech/csm32lp/dmodels/hspice/0.0.0.0"
+    spectre:
+      id: model revision
+      0.0.0.0: "/projects/bcm/beta/tech/csm32lp/dmodels/spectre/0.0.0.0"
+  csm35_3v5vHV:
+    id: simulator language
+    hspice:
+      id: model revision
+      1f.00: "/projects/bcm/beta/tech/csm35_3v5vHV/dmodels/hspice/1f.00"
+    spectre:
+      id: model revision
+      1f.00: "/projects/bcm/beta/tech/csm35_3v5vHV/dmodels/spectre/1f.00"
+  csm40lp:
+    id: simulator language
+    hspice:
+      id: model revision
+      1b.0.0.0: "/projects/bcm/beta/tech/csm40lp/dmodels/hspice/1b.0.0.0"
+  csm65lp_ldmos:
+    id: simulator language
+    spectre:
+      id: model revision
+      1.10.2: "/projects/bcm/beta/tech/csm65lp_ldmos/dmodels/spectre/1.10.2"
+  gf130:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.9_0p0.0.0.0: "/projects/bcm/beta/tech/gf130/dmodels/hspice/0.9_0p0.0.0.0"
+    spectre:
+      id: model revision
+      0.9_0p0.0.0.0: "/projects/bcm/beta/tech/gf130/dmodels/spectre/0.9_0p0.0.0.0"
+  gf14xm:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1_0.0.0: "/projects/bcm/beta/tech/gf14xm/dmodels/hspice/0.1_0.0.0"
+  gf22fdsoi:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.06_0p0.0.0.0: "/projects/bcm/beta/tech/gf22fdsoi/dmodels/hspice/0.06_0p0.0.0.0"
+    spectre:
+      id: model revision
+      0.06_0p0.0.0.0: "/projects/bcm/beta/tech/gf22fdsoi/dmodels/spectre/0.06_0p0.0.0.0"
+  gf28hpp:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.3_1.0.0: "/projects/bcm/beta/tech/gf28hpp/dmodels/hspice/0.3_1.0.0"
+  gf28lp:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_0.0.0: "/projects/bcm/beta/tech/gf28lp/dmodels/hspice/0.5_0.0.0"
+    spectre:
+      id: model revision
+      0.5_0.0.0: "/projects/bcm/beta/tech/gf28lp/dmodels/spectre/0.5_0.0.0"
+  gf40:
+    id: simulator language
+    spectre:
+      id: model revision
+      1.2_2p1.0.3.1: "/projects/bcm/beta/tech/gf40/dmodels/spectre/1.2_2p1.0.3.1"
+  i3t25:
+    id: simulator language
+    spectre:
+      id: model revision
+      '0.1': "/projects/bcm/beta/tech/i3t25/dmodels/spectre/0.1"
+  ibm09:
+    id: simulator language
+    hspice:
+      id: model revision
+      t2h00a: "/projects/bcm/beta/tech/ibm09/dmodels/hspice/t2h00a"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/ibm09/dmodels/spectre/fasthigh"
+  ibm09lp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/ibm09lp/dmodels/hspice"
+  ibm10:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/ibm10/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/ibm10/dmodels/spectre"
+  ibm13:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/ibm13/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/ibm13/dmodels/spectre/fasthigh"
+  ibm18SOI:
+    id: simulator language
+    spectre:
+      id: model revision
+      1.1.1.0LD: "/projects/bcm/beta/tech/ibm18SOI/dmodels/spectre/1.1.1.0LD"
+  ibm5hp:
+    id: simulator language
+    spectre: "/projects/bcm/beta/tech/ibm5hp/dmodels/spectre"
+  ibm6hp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/ibm6hp/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/ibm6hp/dmodels/spectre"
+  jazz_sbc18w:
+    id: simulator language
+    spectre:
+      id: model revision
+      v4.9: "/projects/bcm/beta/tech/jazz_sbc18w/dmodels/spectre/v4.9"
+  nec15:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/nec15/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/nec15/dmodels/spectre/fasthigh"
+  sg10lpp:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1.0.0: "/projects/bcm/beta/tech/sg10lpp/dmodels/hspice/0.1.0.0"
+  sg14lpe:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1.3.0_0.0.0: "/projects/bcm/beta/tech/sg14lpe/dmodels/hspice/0.1.3.0_0.0.0"
+  sg20lpm:
+    id: simulator language
+    hspice:
+      id: model revision
+      EVAL1.0.0.0: "/projects/bcm/beta/tech/sg20lpm/dmodels/hspice/EVAL1.0.0.0"
+  sg28fdsoi:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.0_0.0.0: "/projects/bcm/beta/tech/sg28fdsoi/dmodels/hspice/1.0_0.0.0"
+  sg28lph:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1_1.0.0.0.0: "/projects/bcm/beta/tech/sg28lph/dmodels/hspice/0.1_1.0.0.0.0"
+    spectre:
+      id: model revision
+      0.1_1.0.0.0.0: "/projects/bcm/beta/tech/sg28lph/dmodels/spectre/0.1_1.0.0.0.0"
+  silterra18:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/silterra18/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/silterra18/dmodels/spectre/fasthigh"
+  silterra22:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/silterra22/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/silterra22/dmodels/spectre/fasthigh"
+  smic13:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/smic13/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/smic13/dmodels/spectre"
+  smic13lp:
+    id: simulator language
+    spectre:
+      id: model revision
+      '1.0': "/projects/bcm/beta/tech/smic13lp/dmodels/spectre/1.0"
+  smic18:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/smic18/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/smic18/dmodels/spectre"
+  smic28hpm:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/smic28hpm/dmodels/hspice/0.5_2p1.0.0.0"
+    spectre:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/smic28hpm/dmodels/spectre/0.5_2p1.0.0.0"
+  tsmc065lp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc065lp/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc065lp/dmodels/spectre/fasthigh"
+  tsmc09:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.40.1: "/projects/bcm/beta/tech/tsmc09/dmodels/hspice/1.40.1"
+    spectre:
+      id: model revision
+      '1.42': "/projects/bcm/beta/tech/tsmc09/dmodels/spectre/1.42"
+  tsmc09gt:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc09gt/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/tsmc09gt/dmodels/spectre"
+  tsmc09lp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc09lp/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/tsmc09lp/dmodels/spectre"
+  tsmc10:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc10/dmodels/hspice/0.1_2p1.0.0.0"
+    spectre:
+      id: model revision
+      0.1_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc10/dmodels/spectre/0.1_2p1.0.0.0"
+  tsmc13:
+    id: simulator language
+    eldo: "/projects/bcm/beta/tech/tsmc13/dmodels/eldo"
+    hspice: "/projects/bcm/beta/tech/tsmc13/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc13/dmodels/spectre/fasthigh"
+  tsmc13lp:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc13lp/dmodels/hspice"
+    spectre:
+      id: model revision
+      1.11.3: "/projects/bcm/beta/tech/tsmc13lp/dmodels/spectre/1.11.3"
+  tsmc13lv:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc13lv/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc13lv/dmodels/spectre/fasthigh"
+  tsmc15:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc15/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc15/dmodels/spectre/fasthigh"
+  tsmc16ff:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.01_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ff/dmodels/hspice/0.01_1p1.0.0.0"
+    spectre:
+      id: model revision
+      0.01_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ff/dmodels/spectre/0.01_1p1.0.0.0"
+  tsmc16ffc:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.9_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffc/dmodels/hspice/0.9_2p1.0.0.0"
+    spectre:
+      id: model revision
+      0.9_2p1.0.1.0: "/projects/bcm/beta/tech/tsmc16ffc/dmodels/spectre/0.9_2p1.0.1.0"
+  tsmc16ffgl:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffgl/dmodels/hspice/0.5_2p1.0.0.0"
+    spectre:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffgl/dmodels/spectre/0.5_2p1.0.0.0"
+  tsmc16ffll:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffll/dmodels/hspice/0.5_1p1.0.0.0"
+    spectre:
+      id: model revision
+      0.5_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffll/dmodels/spectre/0.5_1p1.0.0.0"
+  tsmc16ffllp:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.9_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffllp/dmodels/hspice/0.9_1p1.0.0.0"
+    spectre:
+      id: model revision
+      0.9_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc16ffllp/dmodels/spectre/0.9_1p1.0.0.0"
+  tsmc18:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc18/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc18/dmodels/spectre/fasthigh"
+  tsmc18SiGe:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc18SiGe/dmodels/hspice"
+    spectre:
+      id: model revision
+      '1.00': "/projects/bcm/beta/tech/tsmc18SiGe/dmodels/spectre/1.00"
+  tsmc18SiGe_PA:
+    id: simulator language
+    spectre:
+      id: model revision
+      0.10m: "/projects/bcm/beta/tech/tsmc18SiGe_PA/dmodels/spectre/0.10m"
+  tsmc18_5v20vHV:
+    id: simulator language
+    hspice:
+      id: model revision
+      '0.20': "/projects/bcm/beta/tech/tsmc18_5v20vHV/dmodels/hspice/0.20"
+    spectre:
+      id: model revision
+      '0.11': "/projects/bcm/beta/tech/tsmc18_5v20vHV/dmodels/spectre/0.11"
+  tsmc18ms:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc18ms/dmodels/hspice"
+    spectre:
+      id: model revision
+      spectre: "/projects/bcm/beta/tech/tsmc18ms/dmodels/spectre/spectre"
+  tsmc20g:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.05_1p2.0.0.0: "/projects/bcm/beta/tech/tsmc20g/dmodels/hspice/0.05_1p2.0.0.0"
+    spectre:
+      id: model revision
+      0.05_1p2.0.0.0: "/projects/bcm/beta/tech/tsmc20g/dmodels/spectre/0.05_1p2.0.0.0"
+  tsmc20soc:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.05_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc20soc/dmodels/hspice/0.05_1p1.0.0.0"
+    spectre:
+      id: model revision
+      0.05_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc20soc/dmodels/spectre/0.05_1p1.0.0.0"
+  tsmc25mim:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc25mim/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc25mim/dmodels/spectre/fasthigh"
+  tsmc28hp:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hp/dmodels/hspice/1.0_2p1.0.0.0"
+  tsmc28hp_M1_5Mx_1Mz_1RDL:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hp_M1_5Mx_1Mz_1RDL/dmodels/hspice/0.5_2p1.0.0.0"
+  tsmc28hpc:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hpc/dmodels/hspice/1.0_2p1.0.0.0"
+    spectre:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hpc/dmodels/spectre/1.0_2p1.0.0.0"
+  tsmc28hpc+:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hpc+/dmodels/hspice/1.0_2p1.0.0.0"
+  tsmc28hpl:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.3_2p1.0.1.0: "/projects/bcm/beta/tech/tsmc28hpl/dmodels/hspice/0.3_2p1.0.1.0"
+    spectre:
+      id: model revision
+      0.3_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hpl/dmodels/spectre/0.3_2p1.0.0.0"
+  tsmc28hpm:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hpm/dmodels/hspice/0.5_1p1.0.0.0"
+    spectre:
+      id: model revision
+      0.5_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc28hpm/dmodels/spectre/0.5_1p1.0.0.0"
+  tsmc35SiGe:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc35SiGe/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc35SiGe/dmodels/spectre/fasthigh"
+  tsmc35_3v5v:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc35_3v5v/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc35_3v5v/dmodels/spectre/fasthigh"
+  tsmc35rf:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc35rf/dmodels/hspice"
+    spectre:
+      id: model revision
+      POhigh: "/projects/bcm/beta/tech/tsmc35rf/dmodels/spectre/POhigh"
+  tsmc40:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1p4: "/projects/bcm/beta/tech/tsmc40/dmodels/hspice/0.1p4"
+    spectre:
+      id: model revision
+      0.1p4: "/projects/bcm/beta/tech/tsmc40/dmodels/spectre/0.1p4"
+  tsmc40lp:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.1p1: "/projects/bcm/beta/tech/tsmc40lp/dmodels/hspice/0.1p1"
+    spectre:
+      id: model revision
+      0.1p1: "/projects/bcm/beta/tech/tsmc40lp/dmodels/spectre/0.1p1"
+  tsmc40lpbkm:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc40lpbkm/dmodels/hspice/1.0_2p1.0.0.0"
+    spectre:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc40lpbkm/dmodels/spectre/1.0_2p1.0.0.0"
+  tsmc40lpemf:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc40lpemf/dmodels/hspice/0.5_2p1.0.0.0"
+    spectre:
+      id: model revision
+      0.5_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc40lpemf/dmodels/spectre/0.5_2p1.0.0.0"
+  tsmc40lpg:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc40lpg/dmodels/hspice/1.0_2p1.0.0.0"
+  tsmc40lpp:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.1_2p1.0.0.0: "/projects/bcm/beta/tech/tsmc40lpp/dmodels/hspice/1.1_2p1.0.0.0"
+  tsmc45gs:
+    id: simulator language
+    hspice:
+      id: model revision
+      '0.1': "/projects/bcm/beta/tech/tsmc45gs/dmodels/hspice/0.1"
+    spectre:
+      id: model revision
+      0.1p4: "/projects/bcm/beta/tech/tsmc45gs/dmodels/spectre/0.1p4"
+  tsmc45lp:
+    id: simulator language
+    hspice:
+      id: model revision
+      '0.1': "/projects/bcm/beta/tech/tsmc45lp/dmodels/hspice/0.1"
+    spectre:
+      id: model revision
+      '0.1': "/projects/bcm/beta/tech/tsmc45lp/dmodels/spectre/0.1"
+  tsmc50:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc50/dmodels/hspice"
+    spectre:
+      id: model revision
+      fasthigh: "/projects/bcm/beta/tech/tsmc50/dmodels/spectre/fasthigh"
+  tsmc65:
+    id: simulator language
+    hspice:
+      id: model revision
+      '0.1': "/projects/bcm/beta/tech/tsmc65/dmodels/hspice/0.1"
+    spectre:
+      id: model revision
+      '0.10': "/projects/bcm/beta/tech/tsmc65/dmodels/spectre/0.10"
+  tsmc65.jims:
+    id: simulator language
+    hspice:
+      id: model revision
+      '0.1': "/projects/bcm/beta/tech/tsmc65.jims/dmodels/hspice/0.1"
+    spectre:
+      id: model revision
+      '0.10': "/projects/bcm/beta/tech/tsmc65.jims/dmodels/spectre/0.10"
+  tsmc65gp:
+    id: simulator language
+    hspice:
+      id: model revision
+      1.3.0: "/projects/bcm/beta/tech/tsmc65gp/dmodels/hspice/1.3.0"
+    spectre:
+      id: model revision
+      1.3.0: "/projects/bcm/beta/tech/tsmc65gp/dmodels/spectre/1.3.0"
+  tsmc65lp:
+    id: simulator language
+    hspice:
+      id: model revision
+      '1.01': "/projects/bcm/beta/tech/tsmc65lp/dmodels/hspice/1.01"
+    spectre:
+      id: model revision
+      '1.10': "/projects/bcm/beta/tech/tsmc65lp/dmodels/spectre/1.10"
+  tsmc65lp.20060829_115555:
+    id: simulator language
+    hspice: "/projects/bcm/beta/tech/tsmc65lp.20060829_115555/dmodels/hspice"
+    spectre: "/projects/bcm/beta/tech/tsmc65lp.20060829_115555/dmodels/spectre"
+  tsmc7ff:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.01_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc7ff/dmodels/hspice/0.01_1p1.0.0.0"
+    spectre:
+      id: model revision
+      0.01_1p1.0.0.0: "/projects/bcm/beta/tech/tsmc7ff/dmodels/spectre/0.01_1p1.0.0.0"
+  umc28:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.6_0.0.0: "/projects/bcm/beta/tech/umc28/dmodels/hspice/0.6_0.0.0"
+    spectre:
+      id: model revision
+      0.6_0.0.0: "/projects/bcm/beta/tech/umc28/dmodels/spectre/0.6_0.0.0"
+  umc28hpl:
+    id: simulator language
+    hspice:
+      id: model revision
+      0.5_1p1.0.0.0: "/projects/bcm/beta/tech/umc28hpl/dmodels/hspice/0.5_1p1.0.0.0"
+    spectre:
+      id: model revision
+      1.0_2p1.0.0.0: "/projects/bcm/beta/tech/umc28hpl/dmodels/spectre/1.0_2p1.0.0.0"
+  umc40lp:
+    id: simulator language
+    spectre:
+      id: model revision
+      101.0.0.0: "/projects/bcm/beta/tech/umc40lp/dmodels/spectre/101.0.0.0"
+  umc_tsmc40lpbkm:
+    id: simulator language
+    spectre:
+      id: model revision
+      1.0_2p1.0.7.0: "/projects/bcm/beta/tech/umc_tsmc40lpbkm/dmodels/spectre/1.0_2p1.0.7.0"
+  umci13:
+    id: simulator language
+    spectre: "/projects/bcm/beta/tech/umci13/dmodels/spectre"

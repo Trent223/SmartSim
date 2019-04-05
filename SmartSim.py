@@ -100,7 +100,10 @@ class MainPage:
         self.query = query
         self.labels = []
         global slider_resolution
-
+        
+        #Varialbe to store the user's choice when SpecifyID is used
+        self.SelectedID = ""
+        
         # Create the main window
         self.currentWindow = tk.Toplevel(root)
         # close the window if the user hits the 'x' button on the GUI
@@ -133,6 +136,20 @@ class MainPage:
                               command=lambda: self.RedoConfig(self.metricName), bg="deep sky blue")
         # set the location within the window and font size
         configBtn.place(relx=.195, rely=.14)
+
+        '''
+        *******************************************************************
+        UNIT TEST CODE FOR SpecifyID
+        *******************************************************************
+        '''
+        testButton = tk.Button(self.currentWindow, text="TestWindowGeneration", command=lambda : self.SpecifyID("TEST", ["Test1", "Test2", "Test3"]))
+        testButton.place(relx=.03, rely=.515)
+        '''
+        ******************************************************************
+        END OF UNIT TEST CODE FOR SpecifyID
+        ******************************************************************
+        '''
+
 
         # LABEL: Select new metric
         metricLbl = tk.Label(self.currentWindow, text="Select New Metric")
@@ -558,6 +575,50 @@ class MainPage:
                 self.canvas.draw()
 
         # Called to update the paramaters from the configuration file
+    def SpecifyIDCallback(self):
+        #Closes the small window and stores the selected choice
+        '''
+        Useful unit test code
+        print(self.ChoicesComboBox.get())
+        '''
+        self.SelectedID = self.ChoicesComboBox.get()
+        self.VerifyWindow.destroy()
+        
+        
+    def SpecifyID(self, IDValue, Choices):
+        '''
+        Function: Let user select a specific value for the next ID in the config file
+        Argument Count: 2
+        
+        Arguments: 
+        IDValue: 
+        Default = NONE
+        Type = String
+        Description: Will be used to ask the question "Please specify the IDValue"
+        
+        Choices:
+        Default = NONE
+        Type = List (of strings)
+        Description: Will be used to populate a ComboBox (dropdown) of selections to answer the question above
+        
+        Return Value:
+        Type = String
+        Description: Returns the string that the user selected, which should be a member of Choices
+        '''
+        #Build the window
+        self.VerifyWindow = tk.Toplevel(self.currentWindow)
+        self.VerifyWindow.wm_title("Specify {}".format(IDValue))
+        #LABEL to ask the question the dialog serves to answer
+        questionLabel = tk.Label(self.VerifyWindow, text="Please specify the {}:".format(IDValue))
+        questionLabel.pack(side="top", fill="both", padx=25, pady=10)
+        #ComboBox to list choices
+        self.ChoicesComboBox = ttk.Combobox(self.VerifyWindow, values=Choices)
+        self.ChoicesComboBox.pack(side="top", fill="both")
+        #Button to confirm selection
+        self.ConfirmButton = tk.Button(self.VerifyWindow, text="Confirm", command=lambda : self.SpecifyIDCallback())
+        self.ConfirmButton.pack(side="top")
+        
+    
     def RedoConfig(self, selection):
                 # retrieve the values of the devsim and optimizer values from the appropriate place. These may be set to random
                 # values at the moment by the user
