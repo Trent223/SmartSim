@@ -104,6 +104,9 @@ class MainPage:
         #Varialbe to store the user's choice when SpecifyID is used
         self.SelectedID = ""
         
+        #Variable to store the user's answer then GetUserInput is used
+        self.UserAnswer = ""
+        
         # Create the main window
         self.currentWindow = tk.Toplevel(root)
         # close the window if the user hits the 'x' button on the GUI
@@ -149,6 +152,18 @@ class MainPage:
         END OF UNIT TEST CODE FOR SpecifyID
         ******************************************************************
         '''
+        '''
+        ******************************************************************
+        UNIT TEST CODE FOR GetUserInput
+        ******************************************************************
+        '''
+        testButton2 = tk.Button(self.currentWindow, text="TestWindowGenerationForAskingQuestion", command=lambda : self.GetUserInput("This is a test question"))
+        testButton2.place(relx=.03, rely=.555)
+        '''
+        ******************************************************************
+        END OF UNIT TEST CODE FOR SpecifyID
+        ******************************************************************
+        '''        
 
 
         # LABEL: Select new metric
@@ -576,6 +591,10 @@ class MainPage:
 
         # Called to update the paramaters from the configuration file
     def SpecifyIDCallback(self):
+        '''
+        Author: Trent Minch
+        Provide implementation for the button in the SpecifyID window
+        '''
         #Closes the small window and stores the selected choice
         '''
         Useful unit test code
@@ -587,6 +606,7 @@ class MainPage:
         
     def SpecifyID(self, IDValue, Choices):
         '''
+        Author: Trent Minch
         Function: Let user select a specific value for the next ID in the config file
         Argument Count: 2
         
@@ -618,6 +638,48 @@ class MainPage:
         self.ConfirmButton = tk.Button(self.VerifyWindow, text="Confirm", command=lambda : self.SpecifyIDCallback())
         self.ConfirmButton.pack(side="top")
         
+    
+    def GetUserInputCallback(self):
+        '''
+        Author: Trent Minch
+        Provide implementation for the button in the GetUserInput window       
+        '''
+        #Closes the small window and stores the user's answer
+        '''
+        Useful unit test code
+        '''
+        #print(self.answerEntry.get())
+        
+        self.UserAnswer = self.answerEntry.get()
+        self.QuestionWindow.destroy()        
+        
+    def GetUserInput(self, Question):
+            '''
+            Author: Trent Minch
+            Provides a means by which the program can ask the user a question and get an answer. The 
+            intended use is to replace input() statements on the command line with something that is in the GUI
+            
+            Argument Count: 1
+            
+            Arguments: Question (string):
+                What question we are asking the user
+            
+            Returns: The user's answer as a string
+            '''
+            #Build the window
+            self.QuestionWindow = tk.Toplevel(self.currentWindow)
+            self.QuestionWindow.wm_title("Question")
+            #LABEL to ask the question the dialog serves to answer
+            questionLabel = tk.Label(self.QuestionWindow, text=Question)
+            questionLabel.pack(side="top", fill="both", padx=25, pady=10)        
+            #Entry to allow the user a place to respond
+            self.answerEntry = tk.Entry(self.QuestionWindow)
+            self.answerEntry.pack(side="top", fill="both")
+            #Button for the user to click when they are done
+            self.OKButton = tk.Button(self.QuestionWindow, text="OK", command=lambda : self.GetUserInputCallback())
+            self.OKButton.pack(side="top")        
+            
+            
     
     def RedoConfig(self, selection):
                 # retrieve the values of the devsim and optimizer values from the appropriate place. These may be set to random
@@ -701,7 +763,7 @@ class MainPage:
             # This will kill the entire application
             root.destroy()
 
-
+    
 def main():
     # This is a little nasty, but I had to use a for loop to get the first metric of
     # the config file. Not sure how else to do it as it will not accept an integer and
