@@ -11,6 +11,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter import messagebox
 import sys
+import yaml
 from sympy import solve, Symbol
 from config_funcs import get_optimizer_values, get_devsim_values, update_config_file, config_file #this is causing function to crash if no config file is found right off the bat. SEE COMMENT IN config_funcs.py JBS
 
@@ -588,6 +589,42 @@ class MainPage:
                 self.plot.set_ylim([min_Y, max_Y])
                 self.plot.scatter(opt_x_data, opt_y_data, color='red')
                 self.canvas.draw()
+
+
+    def SpecifyIDWrapper(self, tech_idx='tech_index.yml'):
+        '''#TODO Describe function
+
+        Author: Bertil Johnson
+
+        Args:
+            tech_idx: path to yaml file
+
+        Returns:
+            model path if successful, None otherwise
+
+        '''
+        with open(tech_idx) as fp:
+            idx = yaml.safe_load(fp)
+
+        while 'id' in idx.keys():
+            _id = idx.pop('id')
+
+            # return none if sequence turns up empty
+            if isinstance(idx, dict) and len(idx) == 0:
+                return None
+
+            choices = list(idx.keys())
+            self.SpecifyID(_id, choices)
+            self.VerifyWindow.wait_window()
+            idx = idx[self.SelectedID]
+
+            # successfully found a path
+            if isinstance(idx, list):
+                return idx[0]
+
+        return None
+
+
 
         # Called to update the paramaters from the configuration file
     def SpecifyIDCallback(self):
