@@ -2,6 +2,7 @@ import subprocess
 
 import sys
 import os
+import yaml 
 
 try:
     # Check to see if application was called with an argument. Argument must represent 
@@ -10,13 +11,26 @@ try:
 except:
     #if argument not given set default config file
     command = input("Enter name of config file: ") #This change allows the user to enter the name of the config file instead of the program assuming the name JBS
+
+with open(command) as yaml_config:
+    try:
+        print(yaml.safe_load(yaml_config))
+    except yaml.YAMLError as yaml_exception:
+        print('Error opening file: '+yaml_exception)
+        sys.exit()
+
+'''
 try:
     #Attempt to import the given config file
-    config_file = __import__(command)
+    #config_file = __import__(command
 except:
     #If given config file could not be loaded report an error and close application
     print("Could not import "+command)
     sys.exit()
+'''
+
+
+
 
 def get_optimizer_values(metric):
 
@@ -44,6 +58,7 @@ def get_optimizer_values(metric):
 
     # update config file
     update_config_file()
+
 
 
 def get_devsim_values(metric):

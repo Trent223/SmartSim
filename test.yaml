@@ -1,0 +1,19 @@
+Ids:
+    Metric: Ids
+    Model: (u*C_ox*W * (Vgs-Vt)**2) / (2*L)
+    x_axis: Vgs
+    design_params: [W, L, C_ox, Vt]
+    devsim_params: []
+    optimizer_params: [u]
+    u: 1
+    W: 4.22
+    L: 0.5
+    C_ox: 11
+    Vt: 14.11
+    opt_x_data: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    opt_y_data: [5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0]
+    models_path: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+    corners: tt.cor
+    secondary_corners: ttcell.cor,trtc.cor
+    headers: [Paramname, Model, N/P, Type, Sweeps, Graph, W, L, M, Temperature, Vd, Vg, Vs, Vb, Simulator, MF, NF, Vcc, Vdlin, CC]
+
