@@ -13,8 +13,27 @@ from tkinter import messagebox
 import sys
 import yaml
 from sympy import solve, Symbol
+import numpy as np
+from Equation import Expression
 from config_funcs import get_optimizer_values, get_devsim_values, update_config_file, config_file #this is causing function to crash if no config file is found right off the bat. SEE COMMENT IN config_funcs.py JBS
 
+class Model:
+
+    def __init__(self, equation, params):
+        """
+        Args:
+            equation: string of a mathematical equation
+            params: dictionary of parameters in `equation`
+        """
+        self._equation = Expression(equation)
+        self.params = params
+
+    def solve(self, x):
+
+        try:
+            return self._equation(**self.params, **x)
+        except ZeroDivisionError:
+            return np.nan
 
 
 # Create a root window that will be hidden. Will act as a driver to all other windows that may need to be spawned.
@@ -95,19 +114,21 @@ class MainPage:
     def __init__(self, query, metricName, metricIndex, allParams, all_param_values):
                 # copy all parameters into class variables that can be used with 'self' throughout this class
         self.allParams = allParams
-        self.all_param_values = all_param_values
+        self.all_param_values = [float(n) for n in all_param_values]
         self.metricName = metricName
         self.metricIndex = metricIndex
         self.query = query
         self.labels = []
+        self.model = Model(query['Model'], dict(zip(self.allParams, self.all_param_values)))
+
         global slider_resolution
-        
+
         #Varialbe to store the user's choice when SpecifyID is used
         self.SelectedID = ""
-        
+
         #Variable to store the user's answer then GetUserInput is used
         self.UserAnswer = ""
-        
+
         # Create the main window
         self.currentWindow = tk.Toplevel(root)
         # close the window if the user hits the 'x' button on the GUI
@@ -164,7 +185,7 @@ class MainPage:
         ******************************************************************
         END OF UNIT TEST CODE FOR SpecifyID
         ******************************************************************
-        '''        
+        '''
 
 
         # LABEL: Select new metric
@@ -290,6 +311,7 @@ class MainPage:
     # This function is responsible for creating the widgets on the bottom left of the GUI that allow you to edit
         # a parameter, set a goal value and use the slider.
     def Edit(self, selection, index, flag):
+        curr_param = self.allParams[index] # name of parameter we're modifying
         global slider_resolution
         if (flag == 1):
             # If this is not the first time the function is called than widgets already exist.
@@ -351,7 +373,7 @@ class MainPage:
             global slider_resolution
             try:
                         # set the parameter being edited to the value entered in the textbox
-                self.all_param_values[index] = float(self.manualText.get())
+                self.model.params[curr_param] = float(self.manualText.get())
                 splitText = self.manualText.get().split(".")
                 if len(splitText) > 1:
                     slider_resolution = 10**(-1*len(splitText[1]))
@@ -361,14 +383,14 @@ class MainPage:
                     # update the configfile.
                 # check if the parameter is a devsim parameter
                 devsim_params = self.query["devsim_params"]
-                if self.allParams[index] in devsim_params:
+                if curr_param in devsim_params:
                     tempValue = config_file.user_config["config_" +
-                                                        self.metricName][self.allParams[index]][0]
-                    config_file.user_config["config_"+self.metricName][self.allParams[index]] = [
-                        tempValue, self.all_param_values[index]]
+                                                        self.metricName][curr_param][0]
+                    config_file.user_config["config_"+self.metricName][curr_param] = [
+                        tempValue, self.model.params[curr_param]]
                 else:
                     config_file.user_config["config_" +
-                                            self.metricName][self.allParams[index]] = self.all_param_values[index]
+                                            self.metricName][curr_param] = self.model.params[curr_param]
                     # update the label associated with this parameter
                 self.Display_Parameters(1)
                 # Redraw the graph
@@ -383,10 +405,10 @@ class MainPage:
                 # Update the min, max and res labels of the slider
                 self.minimum.delete(0, 20)
                 self.minimum.insert(
-                    0, float(self.all_param_values[index]) - 5.0)
+                    0, float(self.model.params[curr_param]) - 5.0)
                 self.maximum.delete(0, 20)
                 self.maximum.insert(
-                    0, float(self.all_param_values[index]) + 5.0)
+                    0, float(self.model.params[curr_param]) + 5.0)
                 self.resolution.delete(0, 20)
                 self.resolution.insert(0, float(slider_resolution))
 
@@ -423,7 +445,7 @@ class MainPage:
         # delete the default 0 added to the textbox
         self.minimum.delete(0, 1)
         # set the default value to be displayed
-        self.minimum.insert(0, float(self.all_param_values[index]) - 5.0)
+        self.minimum.insert(0, float(self.model.params[curr_param]) - 5.0)
         # set the location within the window and font size
         self.minimum.place(relx=0.05, rely=0.86)
 
@@ -440,7 +462,7 @@ class MainPage:
         # delete the default o added to the textbox
         self.maximum.delete(0, 1)
         # set the default value to be displayed
-        self.maximum.insert(0, float(self.all_param_values[index]) + 5.0)
+        self.maximum.insert(0, float(self.model.params[curr_param]) + 5.0)
         # set the location within the window and font size
         self.maximum.place(relx=0.1575, rely=0.86)
 
@@ -464,19 +486,19 @@ class MainPage:
         # Get the value of the slider when the user moves the mouse. called for each tick of the slider and not just when the user lets go.
         def getSliderValue(value):
                         # update the parameter being edited
-            self.all_param_values[index] = float(value)
+            self.model.params[curr_param] = float(value)
 
             # update the config file
             # check if the parameter is a devsim parameter
             devsim_params = self.query["devsim_params"]
-            if self.allParams[index] in devsim_params:
+            if curr_param in devsim_params:
                 tempValue = config_file.user_config["config_" +
-                                                    self.metricName][self.allParams[index]][0]
-                config_file.user_config["config_"+self.metricName][self.allParams[index]] = [
-                    tempValue, self.all_param_values[index]]
+                                                    self.metricName][curr_param][0]
+                config_file.user_config["config_"+self.metricName][curr_param] = [
+                    tempValue, self.model.params[curr_param]]
             else:
                 config_file.user_config["config_" +
-                                        self.metricName][self.allParams[index]] = self.all_param_values[index]
+                                        self.metricName][curr_param] = self.model.params[curr_param]
 
             # reload the label associated with this parameter
             self.Display_Parameters(1)
@@ -489,9 +511,9 @@ class MainPage:
             update_config_file()
 
             # SLIDER: slider that allows you to edit any given parameter
-        self.slider = tk.Scale(self.currentWindow, from_=float(self.all_param_values[index]) - 5.0, to=float(
-            self.all_param_values[index]) + 5.0, orient="horizontal", length=450, digits=10, resolution=slider_resolution, command=getSliderValue)
-        self.slider.set(float(self.all_param_values[index]))
+        self.slider = tk.Scale(self.currentWindow, from_=float(self.model.params[curr_param]) - 5.0, to=float(
+            self.model.params[curr_param]) + 5.0, orient="horizontal", length=450, digits=10, resolution=slider_resolution, command=getSliderValue)
+        self.slider.set(float(self.model.params[curr_param]))
         # set the location within the window and font size
         self.slider.place(relx=.21, rely=.92, anchor="center")
 
@@ -513,32 +535,11 @@ class MainPage:
     # This function is responsible for drawing the graph
     def DrawGraph(self, flag):
 
-                # get the equation for the model
-        selected_parameter = tk.StringVar()
-        modelEq = self.query["Model"]
-        # retrieve the x values from the config file
-        opt_x_data = self.query["opt_x_data"]
-        opt_y_data = self.query["opt_y_data"]
+        opt_x_data = np.array(self.query["opt_x_data"])
+        opt_y_data = np.array(self.query["opt_y_data"])
         x_axis = self.query["x_axis"]
-        # create a list to hold the generated y values
-        Y_dataPoints = []
-        counter = 0
-        # replace all parameters in the model equation with their actual values
-        for index in self.allParams:
-            modelEq = modelEq.replace(
-                index, str(self.all_param_values[counter]))
-            counter = counter + 1
-        # after all parameter variables have been replaced with their actual values evaluate the equation
 
-        self.eqn = modelEq
-        # at different values of x to generate the y data points for the graph
-        for dataPoint in opt_x_data:
-            currentEq = modelEq.replace(x_axis, str(dataPoint))
-            # append each point to the list of y data points
-            try:
-                Y_dataPoints.append(eval(currentEq))
-            except:
-                print("attempted to divide by zero. Value ignored")
+        Y_dataPoints = [self.model.solve({x_axis: x}) for x in opt_x_data]
 
         if (flag == 0):
             # INIT Graph: set the size of the graph window
@@ -639,8 +640,8 @@ class MainPage:
         '''
         self.SelectedID = self.ChoicesComboBox.get()
         self.VerifyWindow.destroy()
-        
-        
+
+
     def SpecifyID(self, IDValue, Choices):
         '''
         Author: Trent Minch
@@ -674,8 +675,8 @@ class MainPage:
         #Button to confirm selection
         self.ConfirmButton = tk.Button(self.VerifyWindow, text="Confirm", command=lambda : self.SpecifyIDCallback())
         self.ConfirmButton.pack(side="top")
-        
-    
+
+
     def GetUserInputCallback(self):
         '''
         Author: Trent Minch
@@ -686,21 +687,21 @@ class MainPage:
         Useful unit test code
         '''
         #print(self.answerEntry.get())
-        
+
         self.UserAnswer = self.answerEntry.get()
-        self.QuestionWindow.destroy()        
-        
+        self.QuestionWindow.destroy()
+
     def GetUserInput(self, Question):
             '''
             Author: Trent Minch
-            Provides a means by which the program can ask the user a question and get an answer. The 
+            Provides a means by which the program can ask the user a question and get an answer. The
             intended use is to replace input() statements on the command line with something that is in the GUI
-            
+
             Argument Count: 1
-            
+
             Arguments: Question (string):
                 What question we are asking the user
-            
+
             Returns: The user's answer as a string
             '''
             #Build the window
@@ -708,16 +709,16 @@ class MainPage:
             self.QuestionWindow.wm_title("Question")
             #LABEL to ask the question the dialog serves to answer
             questionLabel = tk.Label(self.QuestionWindow, text=Question)
-            questionLabel.pack(side="top", fill="both", padx=25, pady=10)        
+            questionLabel.pack(side="top", fill="both", padx=25, pady=10)
             #Entry to allow the user a place to respond
             self.answerEntry = tk.Entry(self.QuestionWindow)
             self.answerEntry.pack(side="top", fill="both")
             #Button for the user to click when they are done
             self.OKButton = tk.Button(self.QuestionWindow, text="OK", command=lambda : self.GetUserInputCallback())
-            self.OKButton.pack(side="top")        
-            
-            
-    
+            self.OKButton.pack(side="top")
+
+
+
     def RedoConfig(self, selection):
                 # retrieve the values of the devsim and optimizer values from the appropriate place. These may be set to random
                 # values at the moment by the user
@@ -800,7 +801,7 @@ class MainPage:
             # This will kill the entire application
             root.destroy()
 
-    
+
 def main():
     # This is a little nasty, but I had to use a for loop to get the first metric of
     # the config file. Not sure how else to do it as it will not accept an integer and
