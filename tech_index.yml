@@ -1,4 +1,5 @@
 ---
+type: simulator language
 id: flow
 stabflow:
   id: platform

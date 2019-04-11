@@ -1,0 +1,12 @@
+---
+type: model
+id: flow
+stabflow:
+ id: platform
+ mainline-bd500fdk:
+  id: technology
+  bd500hc1c-1p2m:
+   id: model revision
+   models.0.1:
+    id: model
+    testmodel: m*x + c/b

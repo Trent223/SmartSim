@@ -623,9 +623,7 @@ class MainPage:
                 return idx[0]
 
         return None
-
-
-
+    
         # Called to update the paramaters from the configuration file
     def SpecifyIDCallback(self):
         '''
