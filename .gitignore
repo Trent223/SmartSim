@@ -3,3 +3,5 @@ config_file.backup
 config_file_funcs.rb
 config_funcs.backup
 rundir*
+testXaxis.txt
+testModel.txt
