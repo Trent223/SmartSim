@@ -84,17 +84,23 @@ def ParseFoundYamlFiles():
     Author: Trent Minch
     After the valid config files in the working
     directory are identified, go through them and 
-    perform the following two actions
+    ask the user which values for each field to use
     
-    1. If the yaml configs have only one possible value
-    for the field, store that value
-    2. Otherwise, ask the user which one to use
+    TODO: If there is only one value in the file, store it by
+    default
     '''
+    
     for file in ConfigData.YamlFiles:
-        with open(file, "r") as YFile: 
+        with open(file["File"], "r") as YFile: 
             Yaml = yaml.safe_load(YFile)
-        TopLevelKeys = Yaml.keys()
-        for key in TopLevelKeys:
+        CurrentKeys = Yaml.keys()
+        #Descend down the Yaml tree until you reach the
+        #end, asking the user which path to take each
+        #step of the way
+        while True:
+            try: 
+                
+        
             
     
     
@@ -162,7 +168,7 @@ def ConfigSetup():
     '''
     ScanCurrentDirectory()
     #Add all the currently known data into ConfigData
-    for 
+    
     
 
 def main():
