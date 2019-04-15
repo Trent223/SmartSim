@@ -225,4 +225,5 @@ def main():
     #print(ConfigData.YamlFiles)    
     print(ConfigData.metrics)
     
-main()
+if __name__=='__main__':
+    main()
