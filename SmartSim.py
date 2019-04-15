@@ -83,10 +83,10 @@ def loadModel(selection, selection_index):
             pass
         # add the values to the list of all values for every parameter in this model
     for index in optimizer_params:
-        #all_param_values.append(str(query[index]))
-        all_param_values.append(str(0))
-        #modelEq = modelEq.replace(index, str(query[index]))
-        modelEq = modelEq.replace(index, str(0))
+        all_param_values.append(str(query[index]))
+        #all_param_values.append(str(0))
+        modelEq = modelEq.replace(index, str(query[index]))
+        #modelEq = modelEq.replace(index, str(0))
 
     # Call the MainPage
     MainPage(query, selection, selection_index, allParams, all_param_values)
@@ -473,15 +473,15 @@ class MainPage:
 
             # update the config file
             # check if the parameter is a devsim parameter
-            devsim_params = self.query["devsim_params"]
+            devsim_params = self.query["devsim params"]
             if self.allParams[index] in devsim_params:
-                tempValue = config_file.user_config["config_" +
-                                                    self.metricName][self.allParams[index]][0]
-                config_file.user_config["config_"+self.metricName][self.allParams[index]] = [
-                    tempValue, self.all_param_values[index]]
+                #tempValue = config_file.user_config["config_" +self.metricName][self.allParams[index]][0]
+                tempValue = ConfigData.metrics[self.metricIndex][self.allParams[index]][0]
+                #config_file.user_config["config_"+self.metricName][self.allParams[index]] = [tempValue, self.all_param_values[index]]
+                ConfigData.metrics[self.metricIndex][self.allParams[index]] = [tempValue, self.all_param_values[index]]
             else:
-                config_file.user_config["config_" +
-                                        self.metricName][self.allParams[index]] = self.all_param_values[index]
+                #config_file.user_config["config_" +self.metricName][self.allParams[index]] = self.all_param_values[index]
+                ConfigData.metrics[self.metricIndex][self.allParams[index]] = self.all_param_values[index]
 
             # reload the label associated with this parameter
             self.Display_Parameters(1)
@@ -554,7 +554,7 @@ class MainPage:
             self.plot.plot(opt_x_data, Y_dataPoints, color='blue')
             # set the title of the plot
             self.plot.set_title("Current Metric: " +
-                                self.query["Metric"], fontsize=14)
+                                self.metricName, fontsize=14)
             # set the y axis title of the plot
             self.plot.set_ylabel("Y", fontsize=14)
             # add a grid to the plot
