@@ -16,6 +16,7 @@ class ConfigData():
     '''
     
     #Actual config file data
+    #This is a list of dictionaries of the form "MetricName" : {Data}
     metrics = []
     #Yaml files in the CWD that are useful to us, and their 
     #relevant fields. This list is a list of dictionaries of the 
@@ -25,6 +26,7 @@ class ConfigData():
     #for to determine if they are needed for our config 
     #info. 
     Keywords = {
+        "Full" : "full",
         "MetricKeyword" : "metric",
         "ModelKeyword" : "model", 
         "XaxisKeyword" : "x axis",
@@ -39,7 +41,8 @@ class ConfigData():
     #These are the keys that must be in ConfigData for each 
     #Metric in order for the program to run
     RequiredKeys = ["Model", "Xaxis", "DesignParams", "DevsimParams", "OptimizerParams", "ModelsPath", "Corners", "SecondaryCorners", "Headers"]
-
+    #Holds the path to a full config file, if the user provides one
+    PathToFullConfig = ""
 
 def ScanCurrentDirectory():
     '''
@@ -89,21 +92,29 @@ def ParseFoundYamlFiles():
     TODO: If there is only one value in the file, store it by
     default
     '''
-    
+    #Check to see if there are any "full" config files
+    for file in ConfigData.YamlFiles:
+        if file["Field"] == "full":
+            print("Full config file {} found. Use this config? Type 'y' or 'n'".format(file["File"]))
+            choice = str(input())
+            while True:
+                if choice.upper() == "Y":
+                    print("Loading config file {}...".format(file["File"]))
+                    ConfigData.PathToFullConfig = file["File"]
+                    return 1
+                elif choice.upper() == "N":
+                    print("Proceeding to identify other config files")
+                    break
+                else:
+                    print("Invalid input. Enter 'y' or 'n' or use KeyboardInterrupt to exit")
+                    choice = input()
     for file in ConfigData.YamlFiles:
         with open(file["File"], "r") as YFile: 
             Yaml = yaml.safe_load(YFile)
         CurrentKeys = Yaml.keys()
         #Descend down the Yaml tree until you reach the
         #end, asking the user which path to take each
-        #step of the way
-        while True:
-            try: 
-                
-        
-            
-    
-    
+        #step of the way   
     
 def VerifyConfigData():
     
@@ -161,15 +172,47 @@ def UpdateConfigData(Metric, Field, Value):
     
     ConfigData.metrics[MetricIndex][Metric].update({Field, Value})
     
+def LoadFullConfig():
+    '''
+    Author: Trent Minch
+    In the event of a full config, load the data
+    straight into our ConfigData class
+    '''
+    #Open the yaml config file
+    with open(ConfigData.PathToFullConfig, "r") as yml:
+        FullConfigData = yaml.safe_load(yml)
+    FullConfigKeys = list(FullConfigData.keys())
+    for key in FullConfigKeys:
+        if key.startswith("metric"):
+            CurrentMetric = FullConfigData[key]
+            CurrentMetricName = CurrentMetric["metric"]
+            ConfigData.metrics.append({CurrentMetricName : {}})
+            #We need the index of the metric we're updating
+            CurrentMetricIndex = 0
+            for item in ConfigData.metrics:
+                if CurrentMetricName in list(item.keys()):
+                    CurrentMetricIndex = ConfigData.metrics.index(item)            
+            for subkey in list(CurrentMetric.keys()):
+                if subkey == 'metric':
+                    #We already got the name of the metric, it's the key for this dict
+                    continue
+                ConfigData.metrics[CurrentMetricIndex][CurrentMetricName].update({subkey : CurrentMetric[subkey]})
+                
+
 def ConfigSetup():
     '''
     Author: Trent Minch
     Calls other functions in this file to set up the config file
     '''
     ScanCurrentDirectory()
+    ParseFoundYamlFiles()
     #Add all the currently known data into ConfigData
-    
-    
+    if ConfigData.PathToFullConfig != "":
+        LoadFullConfig()
+        return
+     
+    #print(ConfigData.metrics)
+
 
 def main():
     '''
@@ -178,7 +221,8 @@ def main():
     function name in production code
     '''
     
-    ScanCurrentDirectory()
-    print(ConfigData.YamlFiles)
+    ConfigSetup()
+    #print(ConfigData.YamlFiles)    
+    print(ConfigData.metrics)
     
 main()

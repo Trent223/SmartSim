@@ -13,9 +13,8 @@ from tkinter import messagebox
 import sys
 import yaml
 from sympy import solve, Symbol
-from config_funcs import get_optimizer_values, get_devsim_values, update_config_file, config_file #this is causing function to crash if no config file is found right off the bat. SEE COMMENT IN config_funcs.py JBS
-
-
+from config_funcs import get_optimizer_values, get_devsim_values, update_config_file#, config_file #this is causing function to crash if no config file is found right off the bat. SEE COMMENT IN config_funcs.py JBS
+from Configure import ConfigSetup, ConfigData
 
 # Create a root window that will be hidden. Will act as a driver to all other windows that may need to be spawned.
 root = tk.Tk()
@@ -29,20 +28,20 @@ slider_resolution = 0.00001
 
 def loadModel(selection, selection_index):
     # Get the name of the selected model
-    selected_model = "config_"+selection
+    selected_model = ConfigData.metrics[selection_index][selection]
     # create a list to hold the value of every parameter in the model to be loaded
     all_param_values = []
     # create a list to hold the name of every parameter
     allParams = []
     # query will now hold all data for the selected model
-    query = config_file.user_config[selected_model]
+    query = selected_model
     # create three different lists to hold the three different types of parameters
     # and retrieve the values from the config file
-    design_params = query["design_params"]
-    devsim_params = query["devsim_params"]
-    optimizer_params = query["optimizer_params"]
+    design_params = query["design params"]
+    devsim_params = query["devsim params"]
+    optimizer_params = query["optimizer params"]
     # Get the model EQ
-    modelEq = query["Model"]
+    modelEq = query["model"]
 
     # Fill the list created earlier to hold all the parameter names
     for index in range(len(design_params)):
@@ -74,15 +73,20 @@ def loadModel(selection, selection_index):
     # Replace all optimizer parameter variables with their associated values
     if len(optimizer_params) > 0:
         # If the values do not exist than retrieve them
-        if query[optimizer_params[0]] == "":
-                        # query the optimizer to update the values if they do not exist
-            get_optimizer_values(selected_model)
-            # reload the config file
-            query = config_file.user_config[selected_model]
+        try:
+            if query[optimizer_params[0]] == "":
+                # query the optimizer to update the values if they do not exist
+                get_optimizer_values(selected_model)
+                # reload the config file
+                query = selected_model
+        except KeyError:
+            pass
         # add the values to the list of all values for every parameter in this model
     for index in optimizer_params:
-        all_param_values.append(str(query[index]))
-        modelEq = modelEq.replace(index, str(query[index]))
+        #all_param_values.append(str(query[index]))
+        all_param_values.append(str(0))
+        #modelEq = modelEq.replace(index, str(query[index]))
+        modelEq = modelEq.replace(index, str(0))
 
     # Call the MainPage
     MainPage(query, selection, selection_index, allParams, all_param_values)
@@ -190,8 +194,9 @@ class MainPage:
 
         ### COMBOBOX for Select Metric ###
         # Load all models that are currently stored in the configuration file
-        for model in config_file.user_config:
-            model_list.append(config_file.user_config[model]["Metric"])
+        
+        for model in ConfigData.metrics:
+            model_list.append(list(model.keys())[0])
 
         # String to store the comboBox selection
         selected_model = tk.StringVar()
@@ -515,10 +520,10 @@ class MainPage:
 
                 # get the equation for the model
         selected_parameter = tk.StringVar()
-        modelEq = self.query["Model"]
+        modelEq = self.query["model"]
         # retrieve the x values from the config file
-        opt_x_data = self.query["opt_x_data"]
-        opt_y_data = self.query["opt_y_data"]
+        opt_x_data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] #self.query["opt_x_data"]
+        opt_y_data = [5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0] #self.query["opt_y_data"]
         x_axis = self.query["x_axis"]
         # create a list to hold the generated y values
         Y_dataPoints = []
@@ -804,9 +809,16 @@ def main():
     # the config file. Not sure how else to do it as it will not accept an integer and
     # I am not sure what models the file may contain. TODO: Find a cleaner solution to
         # this issue if time permits
+    for metric in ConfigData.metrics:
+        #This line only works becasue we know for sure that there's only one key here
+        loadModel(list(metric.keys())[0], 0)
+        break
+    '''
+    DEPRECATED TLM
     for metric in config_file.user_config:
         loadModel(config_file.user_config[metric]["Metric"], 0)
         break
+    '''
         # This try except loop had to be implemented due to a known bug with the current version of tkinter
         # and Mac's OS. When a Mac user opens the GUI and attempts to scroll with a mouse the GUI will immediately
         # crash. This is not an issue with our GUI, but tkinter itself.

@@ -1,0 +1,35 @@
+---
+type: full
+metric1:
+ metric: y
+ model: m*x+c/b
+ x_axis: x
+ design params: []
+ devsim params: []
+ optimizer params: [m,b,c]
+ simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+ corners: tt.cor
+ secondary corners: ttcell.cor,trtc.cor
+ headers: [Paranmane,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,CC]
+metric2:
+ metric: lds
+ model: (u*C_ox*W * (Vgs-Vt)**2) / (2*L)
+ x_axis: Vgs
+ design params: [W, L, C_ox, Vt]
+ devsim params: []
+ optimizer params: [u]
+ simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+ corners: tt.cor
+ secondary corners: ttcell.cor,trtc.cor
+ headers: [Paranmane,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,CC]
+metric3:
+ metric: z
+ model: m*a*d*x + c/b
+ x_axis: x
+ design params: [m, a, d, h, i]
+ devsim params: [e, f, g]
+ optimizer params: [b, c]
+ simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+ corners: tt.cor
+ secondary corners: ttcell.cor,trtc.cor
+ headers: [Paranmane,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,CC]
