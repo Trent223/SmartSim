@@ -15,7 +15,13 @@ try:
     config_file = __import__(command)
 except:
     #If given config file could not be loaded walk user through creating a config file JBS
-    config_file = input("Config file could not be imported. Enter name of config file to be created: ")
+    config_file_name = input("Config file could not be imported. Enter name of config file to be created: ")
+    config_file = create_config_file(config_file_name)
+    
+    
+    
+#Author: Justin Sturgill
+def create_config_file(config_name):
     #Create config file JBS
     config_name = config_file+'.txt'
     f = open(config_name, 'a+')
@@ -34,10 +40,7 @@ except:
         f.write("} \n")
         add_equation = input("Would you like to add another equation? Enter y or n: ")
     f.close()
-    
-    
-    
-    
+    return config_name
 
 def get_optimizer_values(metric):
 
