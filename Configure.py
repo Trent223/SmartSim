@@ -204,6 +204,7 @@ def ConfigSetup():
     Author: Trent Minch
     Calls other functions in this file to set up the config file
     '''
+    print("Setting up config")
     ScanCurrentDirectory()
     ParseFoundYamlFiles()
     #Add all the currently known data into ConfigData
@@ -225,5 +226,4 @@ def main():
     #print(ConfigData.YamlFiles)    
     print(ConfigData.metrics)
     
-if __name__=='__main__':
-    main()
+main()

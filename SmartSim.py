@@ -16,6 +16,12 @@ from sympy import solve, Symbol
 from config_funcs import get_optimizer_values, get_devsim_values, update_config_file#, config_file #this is causing function to crash if no config file is found right off the bat. SEE COMMENT IN config_funcs.py JBS
 from Configure import ConfigSetup, ConfigData
 
+# Create a root window that will be hidden. Will act as a driver to all other windows that may need to be spawned.
+root = tk.Tk()
+root.withdraw()
+# This is the initial resolution of the slider and all other manual entry values
+slider_resolution = 0.00001
+
 
 # This function is called to load model data that will be used to create a new plot
 
@@ -799,12 +805,8 @@ class MainPage:
 
     
 def main():
-    # Create a root window that will be hidden. Will act as a driver to all other windows that may need to be spawned.
-    root = tk.Tk()
-    root.withdraw()
-    # This is the initial resolution of the slider and all other manual entry values
-    slider_resolution = 0.00001
-
+    
+    #print("Entered main")
     # This is a little nasty, but I had to use a for loop to get the first metric of
     # the config file. Not sure how else to do it as it will not accept an integer and
     # I am not sure what models the file may contain. TODO: Find a cleaner solution to
