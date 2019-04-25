@@ -196,7 +196,7 @@ class MainPage:
         # Load all models that are currently stored in the configuration file
         
         for model in ConfigData.metrics:
-            model_list.append(list(model.keys())[0])
+            model_list.append(model[list(model.keys())[0]]['metric'])
 
         # String to store the comboBox selection
         selected_model = tk.StringVar()
@@ -478,10 +478,10 @@ class MainPage:
                 #tempValue = config_file.user_config["config_" +self.metricName][self.allParams[index]][0]
                 tempValue = ConfigData.metrics[self.metricIndex][self.allParams[index]][0]
                 #config_file.user_config["config_"+self.metricName][self.allParams[index]] = [tempValue, self.all_param_values[index]]
-                ConfigData.metrics[self.metricIndex][self.allParams[index]] = [tempValue, self.all_param_values[index]]
+                ConfigData.metrics[self.metricIndex][self.metricName][self.allParams[index]] = [tempValue, self.all_param_values[index]]
             else:
                 #config_file.user_config["config_" +self.metricName][self.allParams[index]] = self.all_param_values[index]
-                ConfigData.metrics[self.metricIndex][self.allParams[index]] = self.all_param_values[index]
+                ConfigData.metrics[self.metricIndex][self.metricName][self.allParams[index]] = self.all_param_values[index]
 
             # reload the label associated with this parameter
             self.Display_Parameters(1)
@@ -784,7 +784,7 @@ class MainPage:
                 tempValue, self.all_param_values[selected_param]]
         else:
             print(ConfigData.metrics)
-            ConfigData.metrics[self.metricIndex][self.metricName][target_var] = self.all_param_values[selected_param]
+            ConfigData.metrics[self.metricIndex][list(ConfigData.metrics[self.metricIndex].keys())[0]][self.metricName][target_var] = self.all_param_values[selected_param]
             #config_file.user_config["config_"+self.metricName][self.allParams[selected_param]
                                                                #] = self.all_param_values[selected_param]
         update_config_file()

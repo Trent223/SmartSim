@@ -1,6 +1,5 @@
 - type: full
-- m: -0.25
-  metric1:
+- metric1:
     b: -2.4351
     c: -12.175
     corners: tt.cor
@@ -27,7 +26,7 @@
     - Vcc
     - Vdlin
     - CC
-    m: -0.25
+    m: 1.75957
     metric: y
     model: m*x+c/b
     optimizer params:
