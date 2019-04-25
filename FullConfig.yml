@@ -1,7 +1,7 @@
 - type: full
 - metric1:
-    b: -2.4351
-    c: -12.175
+    b: -2.4351249208182133
+    c: -12.175624604091066
     corners: tt.cor
     design params: []
     devsim params: []
@@ -26,7 +26,7 @@
     - Vcc
     - Vdlin
     - CC
-    m: 1.75957
+    m: -0.5
     metric: y
     model: m*x+c/b
     optimizer params:

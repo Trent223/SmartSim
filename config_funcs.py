@@ -25,8 +25,11 @@ def get_optimizer_values(metricindex, metric):
 
     # loop through optimizer params and save new vals in the runtime environment
 
-    for idx, param in enumerate(ConfigData.metrics[metricindex][metric]['optimizer_params']):
-        ConfigData.metrics[metricindex][metric][param] = new_opts[idx]
+    #for idx, param in enumerate(ConfigData.metrics[metricindex][metric]['optimizer params']):
+     #   ConfigData.metrics[metricindex][metric][param] = new_opts[idx]
+    for i in range(len(ConfigData.metrics[metricindex][metric]['optimizer params'])):
+        print(new_opts[i])
+        ConfigData.metrics[metricindex][metric][ConfigData.metrics[metricindex][metric]['optimizer params'][i]] = float(new_opts[i])
 
     # update config file
     update_config_file()

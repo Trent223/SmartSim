@@ -554,7 +554,7 @@ class MainPage:
             self.plot.plot(opt_x_data, Y_dataPoints, color='blue')
             # set the title of the plot
             self.plot.set_title("Current Metric: " +
-                                self.metricName, fontsize=14)
+                                ConfigData.metrics[self.metricIndex][self.metricName]['metric'], fontsize=14)
             # set the y axis title of the plot
             self.plot.set_ylabel("Y", fontsize=14)
             # add a grid to the plot
@@ -783,8 +783,8 @@ class MainPage:
             config_file.user_config["config_"+self.metricName][self.allParams[selected_param]] = [
                 tempValue, self.all_param_values[selected_param]]
         else:
-            print(ConfigData.metrics)
-            ConfigData.metrics[self.metricIndex][list(ConfigData.metrics[self.metricIndex].keys())[0]][self.metricName][target_var] = self.all_param_values[selected_param]
+            #print(ConfigData.metrics)
+            ConfigData.metrics[self.metricIndex][self.metricName][target_var] = self.all_param_values[selected_param]
             #config_file.user_config["config_"+self.metricName][self.allParams[selected_param]
                                                                #] = self.all_param_values[selected_param]
         update_config_file()
@@ -796,7 +796,13 @@ class MainPage:
                 # close the current window
         self.currentWindow.destroy()
         # load the new model
-        loadModel(selection, self.metricIndex)
+        #Get the new value of selection, the key that holds the dic data for that metric
+        newSelection = ""
+        for metric in ConfigData.metrics:
+            if selection in (list(list(metric.values())[0].values())):
+                newSelection = list(metric.keys())[0]
+            
+        loadModel(newSelection, self.metricIndex)
 
     # Captures the event of a user hitting the red 'X' button to close a window
     def on_closing(self):
@@ -823,6 +829,7 @@ def main():
         exit()
     index = 0
     for metric in ConfigData.metrics:
+        print(list(metric.keys())[0])
         loadModel(list(metric.keys())[0], index)
         index = index+1
         break
