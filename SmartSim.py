@@ -28,13 +28,13 @@ slider_resolution = 0.00001
 
 def loadModel(selection, selection_index):
     # Get the name of the selected model
-    selected_model = ConfigData.metrics[selection_index][selection]
+    selected_model = list(ConfigData.metrics[selection_index].keys())[0]
     # create a list to hold the value of every parameter in the model to be loaded
     all_param_values = []
     # create a list to hold the name of every parameter
     allParams = []
     # query will now hold all data for the selected model
-    query = selected_model
+    query = ConfigData.metrics[selection_index][selected_model]
     # create three different lists to hold the three different types of parameters
     # and retrieve the values from the config file
     design_params = query["design params"]
@@ -150,8 +150,8 @@ class MainPage:
         UNIT TEST CODE FOR SpecifyID
         *******************************************************************
         '''
-        testButton = tk.Button(self.currentWindow, text="TestWindowGeneration", command=lambda : self.SpecifyID("TEST", ["Test1", "Test2", "Test3"]))
-        testButton.place(relx=.03, rely=.515)
+        #testButton = tk.Button(self.currentWindow, text="TestWindowGeneration", command=lambda : self.SpecifyID("TEST", ["Test1", "Test2", "Test3"]))
+        #testButton.place(relx=.03, rely=.515)
         '''
         ******************************************************************
         END OF UNIT TEST CODE FOR SpecifyID
@@ -162,8 +162,8 @@ class MainPage:
         UNIT TEST CODE FOR GetUserInput
         ******************************************************************
         '''
-        testButton2 = tk.Button(self.currentWindow, text="TestWindowGenerationForAskingQuestion", command=lambda : self.GetUserInput("This is a test question"))
-        testButton2.place(relx=.03, rely=.555)
+        #testButton2 = tk.Button(self.currentWindow, text="TestWindowGenerationForAskingQuestion", command=lambda : self.GetUserInput("This is a test question"))
+        #testButton2.place(relx=.03, rely=.555)
         '''
         ******************************************************************
         END OF UNIT TEST CODE FOR SpecifyID
@@ -724,8 +724,8 @@ class MainPage:
     def RedoConfig(self, selection):
                 # retrieve the values of the devsim and optimizer values from the appropriate place. These may be set to random
                 # values at the moment by the user
-        get_devsim_values("config_"+selection)
-        get_optimizer_values("config_"+selection)
+        get_devsim_values(self.metricIndex, self.metricName)
+        get_optimizer_values(self.metricIndex, self.metricName)
         # destroy the current window
         self.currentWindow.destroy()
         # load the new model
@@ -743,7 +743,8 @@ class MainPage:
             self.X.insert(0, "Error")
             return
         # current model
-        modelEq = self.query["Model"]
+        print(self.query)
+        modelEq = self.query["model"]
         currX_label = self.query["x_axis"]
         # target parameter to be solved
         target_var = self.currParam
@@ -775,15 +776,17 @@ class MainPage:
         self.value.insert(0, self.all_param_values[selected_param])
 
         # check if the parameter is a devsim parameter
-        devsim_params = self.query["devsim_params"]
+        devsim_params = self.query["devsim params"]
         if self.allParams[selected_param] in devsim_params:
             tempValue = config_file.user_config["config_" +
                                                 self.metricName][self.allParams[selected_param]][0]
             config_file.user_config["config_"+self.metricName][self.allParams[selected_param]] = [
                 tempValue, self.all_param_values[selected_param]]
         else:
-            config_file.user_config["config_"+self.metricName][self.allParams[selected_param]
-                                                               ] = self.all_param_values[selected_param]
+            print(ConfigData.metrics)
+            ConfigData.metrics[self.metricIndex][self.metricName][target_var] = self.all_param_values[selected_param]
+            #config_file.user_config["config_"+self.metricName][self.allParams[selected_param]
+                                                               #] = self.all_param_values[selected_param]
         update_config_file()
         self.Display_Parameters(1)
         self.DrawGraph(1)
@@ -800,6 +803,7 @@ class MainPage:
                 # close the current window
         self.currentWindow.destroy
         if messagebox.askokcancel("Quit", "Do you want to quit?"):
+            update_config_file()
             # This will kill the entire application
             root.destroy()
 
@@ -811,9 +815,16 @@ def main():
     # the config file. Not sure how else to do it as it will not accept an integer and
     # I am not sure what models the file may contain. TODO: Find a cleaner solution to
         # this issue if time permits
+    #Remove the type flag from the data
+    try:
+        ConfigData.metrics.pop(0)
+    except IndexError:
+        print("No config data detected")
+        exit()
+    index = 0
     for metric in ConfigData.metrics:
-        #This line only works becasue we know for sure that there's only one key here
-        loadModel(list(metric.keys())[0], 0)
+        loadModel(list(metric.keys())[0], index)
+        index = index+1
         break
     '''
     DEPRECATED TLM

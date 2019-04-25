@@ -1,53 +1,194 @@
----
-type: full
-metric1:
- metric: y
- model: m*x+c/b
- x_axis: x
- design params: []
- devsim params: []
- optimizer params: [m,b,c]
- simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
- corners: tt.cor
- secondary corners: ttcell.cor,trtc.cor
- headers: [Paranmane,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,CC]
- m: -0.25
- b: -2.4351
- c: -12.175
-metric2:
- metric: lds
- model: (u*C_ox*W * (Vgs-Vt)**2) / (2*L)
- x_axis: Vgs
- design params: [W, L, C_ox, Vt]
- devsim params: []
- optimizer params: [u]
- simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
- corners: tt.cor
- secondary corners: ttcell.cor,trtc.cor
- headers: [Paranmane,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,CC]
- u: 1
- W: 4.22
- L: 0.5
- C_ox: 11
- Vt: 14.11
-metric3:
- metric: z
- model: m*a*d*x + c/b
- x_axis: x
- design params: [m, a, d, h, i]
- devsim params: [e, f, g]
- optimizer params: [b, c]
- simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
- corners: tt.cor
- secondary corners: ttcell.cor,trtc.cor
- headers: [Paranmane,Model,N/P,Type,Sweeps,Graph,W,L,M,Temperature,Vd,Vg,Vs,Vb,Simulator,MF,NF,Vcc,Vdlin,CC]
- m: 3.11
- a: 3.1
- d: 1
- h: 1
- i: 1
- b: 7.326565173857639
- c: -334.8606552381626
- e: [[1, nhv, nmos, id, '', '', 7, 0.5, 1, 30, 0.1, 5,'' , 0, eldo, 1, 1, 5, 0.1, 1.00E-08], 0.0004221]
- f: [[1, nhv, nmos, id, '', '', 7, 0.5, 1, 30, 0.1, 5,'' , 0, eldo, 1, 1, 5, 0.1, 1.00E-08], 0.0004221]
- g: [[1, nhv, nmos, id, '', '', 7, 0.5, 1, 30, 0.1, 5,'' , 0, eldo, 1, 1, 5, 0.1, 1.00E-08], 0.0004221]
+- type: full
+- m: -0.25
+  metric1:
+    b: -2.4351
+    c: -12.175
+    corners: tt.cor
+    design params: []
+    devsim params: []
+    headers:
+    - Paranmane
+    - Model
+    - N/P
+    - Type
+    - Sweeps
+    - Graph
+    - W
+    - L
+    - M
+    - Temperature
+    - Vd
+    - Vg
+    - Vs
+    - Vb
+    - Simulator
+    - MF
+    - NF
+    - Vcc
+    - Vdlin
+    - CC
+    m: -0.25
+    metric: y
+    model: m*x+c/b
+    optimizer params:
+    - m
+    - b
+    - c
+    secondary corners: ttcell.cor,trtc.cor
+    simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+    x_axis: x
+- metric2:
+    C_ox: 11
+    L: 0.5
+    Vt: 14.11
+    W: 4.22
+    corners: tt.cor
+    design params:
+    - W
+    - L
+    - C_ox
+    - Vt
+    devsim params: []
+    headers:
+    - Paranmane
+    - Model
+    - N/P
+    - Type
+    - Sweeps
+    - Graph
+    - W
+    - L
+    - M
+    - Temperature
+    - Vd
+    - Vg
+    - Vs
+    - Vb
+    - Simulator
+    - MF
+    - NF
+    - Vcc
+    - Vdlin
+    - CC
+    metric: lds
+    model: (u*C_ox*W * (Vgs-Vt)**2) / (2*L)
+    optimizer params:
+    - u
+    secondary corners: ttcell.cor,trtc.cor
+    simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+    u: 1
+    x_axis: Vgs
+- metric3:
+    a: 3.1
+    b: 7.326565173857639
+    c: -334.8606552381626
+    corners: tt.cor
+    d: 1
+    design params:
+    - m
+    - a
+    - d
+    - h
+    - i
+    devsim params:
+    - e
+    - f
+    - g
+    e:
+    - - 1
+      - nhv
+      - nmos
+      - id
+      - ''
+      - ''
+      - 7
+      - 0.5
+      - 1
+      - 30
+      - 0.1
+      - 5
+      - ''
+      - 0
+      - eldo
+      - 1
+      - 1
+      - 5
+      - 0.1
+      - 1.0e-08
+    - 0.0004221
+    f:
+    - - 1
+      - nhv
+      - nmos
+      - id
+      - ''
+      - ''
+      - 7
+      - 0.5
+      - 1
+      - 30
+      - 0.1
+      - 5
+      - ''
+      - 0
+      - eldo
+      - 1
+      - 1
+      - 5
+      - 0.1
+      - 1.0e-08
+    - 0.0004221
+    g:
+    - - 1
+      - nhv
+      - nmos
+      - id
+      - ''
+      - ''
+      - 7
+      - 0.5
+      - 1
+      - 30
+      - 0.1
+      - 5
+      - ''
+      - 0
+      - eldo
+      - 1
+      - 1
+      - 5
+      - 0.1
+      - 1.0e-08
+    - 0.0004221
+    h: 1
+    headers:
+    - Paranmane
+    - Model
+    - N/P
+    - Type
+    - Sweeps
+    - Graph
+    - W
+    - L
+    - M
+    - Temperature
+    - Vd
+    - Vg
+    - Vs
+    - Vb
+    - Simulator
+    - MF
+    - NF
+    - Vcc
+    - Vdlin
+    - CC
+    i: 1
+    m: 3.11
+    metric: z
+    model: m*a*d*x + c/b
+    optimizer params:
+    - b
+    - c
+    secondary corners: ttcell.cor,trtc.cor
+    simulator language: /tools/stabflow/mainline-s8/s8/t/s8/s8p-10r/models
+    x_axis: x

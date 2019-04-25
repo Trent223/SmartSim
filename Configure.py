@@ -68,8 +68,10 @@ def ScanCurrentDirectory():
             #All Yaml files should have a top-level key called
             #"type" that gives the keyword for what config
             #file field the yaml file is trying to provide
+            #print(YamlFile)
+            #print(YamlFile[0])
             try: 
-                field = YamlFile["type"]
+                field = YamlFile[0]["type"]
             except KeyError:
                 print("YAML file {} did not contain a 'type' key with a valid keyword.".format(file))
                 continue
@@ -181,22 +183,24 @@ def LoadFullConfig():
     #Open the yaml config file
     with open(ConfigData.PathToFullConfig, "r") as yml:
         FullConfigData = yaml.safe_load(yml)
-    FullConfigKeys = list(FullConfigData.keys())
-    for key in FullConfigKeys:
-        if key.startswith("metric"):
-            CurrentMetric = FullConfigData[key]
-            CurrentMetricName = CurrentMetric["metric"]
-            ConfigData.metrics.append({CurrentMetricName : {}})
-            #We need the index of the metric we're updating
-            CurrentMetricIndex = 0
-            for item in ConfigData.metrics:
-                if CurrentMetricName in list(item.keys()):
-                    CurrentMetricIndex = ConfigData.metrics.index(item)            
-            for subkey in list(CurrentMetric.keys()):
-                if subkey == 'metric':
-                    #We already got the name of the metric, it's the key for this dict
-                    continue
-                ConfigData.metrics[CurrentMetricIndex][CurrentMetricName].update({subkey : CurrentMetric[subkey]})
+    print(FullConfigData)
+    ConfigData.metrics = FullConfigData
+    #FullConfigKeys = list(FullConfigData[0].keys())
+    #for key in FullConfigKeys:
+        #if key.startswith("metric"):
+            #CurrentMetric = FullConfigData[key]
+            #CurrentMetricName = CurrentMetric["metric"]
+            #ConfigData.metrics.append({CurrentMetricName : {}})
+            ##We need the index of the metric we're updating
+            #CurrentMetricIndex = 0
+            #for item in ConfigData.metrics:
+                #if CurrentMetricName in list(item.keys()):
+                    #CurrentMetricIndex = ConfigData.metrics.index(item)            
+            #for subkey in list(CurrentMetric.keys()):
+                #if subkey == 'metric':
+                    ##We already got the name of the metric, it's the key for this dict
+                    #continue
+                #ConfigData.metrics[CurrentMetricIndex][CurrentMetricName].update({subkey : CurrentMetric[subkey]})
                 
 
 def ConfigSetup():
