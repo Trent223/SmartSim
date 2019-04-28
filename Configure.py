@@ -183,7 +183,7 @@ def LoadFullConfig():
     #Open the yaml config file
     with open(ConfigData.PathToFullConfig, "r") as yml:
         FullConfigData = yaml.safe_load(yml)
-    print(FullConfigData)
+    #print(FullConfigData)
     ConfigData.metrics = FullConfigData
     #FullConfigKeys = list(FullConfigData[0].keys())
     #for key in FullConfigKeys:
@@ -228,6 +228,6 @@ def main():
     
     ConfigSetup()
     #print(ConfigData.YamlFiles)    
-    print(ConfigData.metrics)
+    #print(ConfigData.metrics)
     
 main()

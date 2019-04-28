@@ -743,7 +743,7 @@ class MainPage:
             self.X.insert(0, "Error")
             return
         # current model
-        print(self.query)
+        #print(self.query)
         modelEq = self.query["model"]
         currX_label = self.query["x_axis"]
         # target parameter to be solved
@@ -829,7 +829,7 @@ def main():
         exit()
     index = 0
     for metric in ConfigData.metrics:
-        print(list(metric.keys())[0])
+        #print(list(metric.keys())[0])
         loadModel(list(metric.keys())[0], index)
         index = index+1
         break

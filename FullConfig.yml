@@ -1,7 +1,7 @@
 - type: full
 - metric1:
-    b: -2.4351249208182133
-    c: -12.175624604091066
+    b: -2.4351
+    c: -12.175
     corners: tt.cor
     design params: []
     devsim params: []
@@ -26,7 +26,15 @@
     - Vcc
     - Vdlin
     - CC
-    m: -0.5
+    m: !!python/object/apply:sympy.core.numbers.Float
+      args:
+      - !!python/tuple
+        - 1
+        - fff945905fb51
+        - -53
+        - 52
+      state:
+        _prec: 53
     metric: y
     model: m*x+c/b
     optimizer params:
